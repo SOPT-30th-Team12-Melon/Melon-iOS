@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="Top3TableViewCell" customModule="Melon_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPq-B8-1oo">
+                        <rect key="frame" x="9" y="8" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="Ubq-Ws-uck"/>
+                            <constraint firstAttribute="height" constant="48" id="WSp-PA-to2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N   Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGy-2I-ECJ">
+                        <rect key="frame" x="70" y="16" width="56" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="hS8-8f-MGQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-      싸이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckk-z8-blA">
+                        <rect key="frame" x="70" y="38" width="47" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="EES-nU-eJG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cPq-B8-1oo" secondAttribute="bottom" constant="8" id="4eL-sO-DgD"/>
+                    <constraint firstItem="cPq-B8-1oo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="H0x-f4-hIo"/>
+                    <constraint firstItem="zGy-2I-ECJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="QLE-pf-1DQ"/>
+                    <constraint firstItem="cPq-B8-1oo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WVQ-BR-yEt"/>
+                    <constraint firstItem="Ckk-z8-blA" firstAttribute="leading" secondItem="cPq-B8-1oo" secondAttribute="trailing" constant="13" id="ZSj-TI-Sas"/>
+                    <constraint firstItem="zGy-2I-ECJ" firstAttribute="leading" secondItem="cPq-B8-1oo" secondAttribute="trailing" constant="13" id="aTK-7M-H54"/>
+                    <constraint firstItem="Ckk-z8-blA" firstAttribute="top" secondItem="zGy-2I-ECJ" secondAttribute="bottom" constant="3" id="tE8-A7-L9b"/>
+                    <constraint firstItem="cPq-B8-1oo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="zah-hp-zaN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumCoverImage" destination="cPq-B8-1oo" id="R6r-dG-5fQ"/>
+                <outlet property="musicArtistLabel" destination="Ckk-z8-blA" id="0ES-FS-rx0"/>
+                <outlet property="musicTitleLabel" destination="zGy-2I-ECJ" id="YDj-XV-F6q"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="97.767857142857139"/>
+        </tableViewCell>
+        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="efE-SB-0bl">
+            <rect key="frame" x="0.0" y="0.0" width="53" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="-110.86956521739131" y="-26.450892857142858"/>
+        </imageView>
+    </objects>
+</document>
