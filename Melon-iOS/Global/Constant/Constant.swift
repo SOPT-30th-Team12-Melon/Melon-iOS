@@ -11,7 +11,7 @@ struct Const {
     
     // MARK: - Icon
     
-    public enum Icon {
+    public enum Image {
         
         //로고
         public static let logo = UIImage(named: "logo_melon")
