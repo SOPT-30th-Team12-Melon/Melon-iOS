@@ -32,6 +32,12 @@ struct Const {
         public static let playBack = UIImage(named: "ic_play_back")
         public static let playNext = UIImage(named: "ic_play_next")
         public static let ham = UIImage(named: "ic_ham")
+        
+        public static let back = UIImage(named: "ic_back")
+        public static let cmt = UIImage(named: "ic_cmt")
+        public static let hrt = UIImage(named: "ic_hrt")
+        public static let more = UIImage(named: "ic_more")
+        
       
         public static let infoAlbum = UIImage(named: "ic_info_album")
         
@@ -49,8 +55,6 @@ struct Const {
         public static let hate = UIImage(named: "album_btn_hate")
         public static let like = UIImage(named: "album_btn_like")
         
-        public static let heart = UIImage(named: "album_ic_hrt")
-        public static let more = UIImage(named: "album_ic_more")
         
         //포스팅화면 아이콘
         public static let myMusic = UIImage(named: "ic_mymusic")
