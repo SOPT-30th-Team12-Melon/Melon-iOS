@@ -14,13 +14,14 @@
 		6A90B57D2833CFF000E273E5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B57C2833CFF000E273E5 /* UIView+.swift */; };
 		6A90B57F2833D02B00E273E5 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B57E2833D02B00E273E5 /* UIViewController+.swift */; };
 		6A90B5812833D04000E273E5 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B5802833D04000E273E5 /* UIStackView+.swift */; };
+		6A90B5A028356ACA00E273E5 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B59F28356ACA00E273E5 /* UICollectionViewRegisterable.swift */; };
+		6A90B5A228356AE100E273E5 /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B5A128356AE100E273E5 /* UITableViewRegisterable.swift */; };
 		6AE8B4042833665800151DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4032833665800151DEC /* AppDelegate.swift */; };
 		6AE8B4062833665800151DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4052833665800151DEC /* SceneDelegate.swift */; };
 		6AE8B4082833665800151DEC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4072833665800151DEC /* MainVC.swift */; };
 		6AE8B40B2833665800151DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B4092833665800151DEC /* Main.storyboard */; };
 		6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B40C2833665A00151DEC /* Assets.xcassets */; };
 		6AE8B4102833665A00151DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B40E2833665A00151DEC /* LaunchScreen.storyboard */; };
-		6AE8B42428336E2400151DEC /* dummy1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B42328336E2400151DEC /* dummy1.swift */; };
 		6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B42C283370B400151DEC /* Posting.storyboard */; };
 		6AE8B42F283370C400151DEC /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B42E283370C400151DEC /* Album.storyboard */; };
 		6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B432283371EB00151DEC /* PostingVC.swift */; };
@@ -45,6 +46,8 @@
 		6A90B59B2834A26E00E273E5 /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
 		6A90B59C2834A26E00E273E5 /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
 		6A90B59D2834A26E00E273E5 /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		6A90B59F28356ACA00E273E5 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
+		6A90B5A128356AE100E273E5 /* UITableViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewRegisterable.swift; sourceTree = "<group>"; };
 		6AE8B4002833665800151DEC /* Melon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Melon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE8B4032833665800151DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE8B4052833665800151DEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +56,6 @@
 		6AE8B40C2833665A00151DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AE8B40F2833665A00151DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AE8B4112833665A00151DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AE8B42328336E2400151DEC /* dummy1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy1.swift; sourceTree = "<group>"; };
 		6AE8B42928336E5600151DEC /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		6AE8B42A28336E5800151DEC /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		6AE8B42C283370B400151DEC /* Posting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posting.storyboard; sourceTree = "<group>"; };
@@ -172,7 +174,8 @@
 		6AE8B41C28336D1800151DEC /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				6AE8B42328336E2400151DEC /* dummy1.swift */,
+				6A90B59F28356ACA00E273E5 /* UICollectionViewRegisterable.swift */,
+				6A90B5A128356AE100E273E5 /* UITableViewRegisterable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				6A90B57D2833CFF000E273E5 /* UIView+.swift in Sources */,
 				6AE8B4362833720200151DEC /* AlbumVC.swift in Sources */,
+				6A90B5A228356AE100E273E5 /* UITableViewRegisterable.swift in Sources */,
 				6AE8B4082833665800151DEC /* MainVC.swift in Sources */,
 				6A90B5792833CFC800E273E5 /* UIFont+.swift in Sources */,
 				6A90B57528338F4400E273E5 /* Constant.swift in Sources */,
@@ -324,7 +328,7 @@
 				6A90B57B2833CFE000E273E5 /* UILabel+.swift in Sources */,
 				6AE8B4042833665800151DEC /* AppDelegate.swift in Sources */,
 				6A90B57F2833D02B00E273E5 /* UIViewController+.swift in Sources */,
-				6AE8B42428336E2400151DEC /* dummy1.swift in Sources */,
+				6A90B5A028356ACA00E273E5 /* UICollectionViewRegisterable.swift in Sources */,
 				6AE8B4062833665800151DEC /* SceneDelegate.swift in Sources */,
 				6A90B5772833CFAC00E273E5 /* UIColor+.swift in Sources */,
 			);
