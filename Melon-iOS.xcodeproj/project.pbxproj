@@ -23,7 +23,6 @@
 		6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B40C2833665A00151DEC /* Assets.xcassets */; };
 		6AE8B4102833665A00151DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B40E2833665A00151DEC /* LaunchScreen.storyboard */; };
 		6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B42C283370B400151DEC /* Posting.storyboard */; };
-		6AE8B42F283370C400151DEC /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B42E283370C400151DEC /* Album.storyboard */; };
 		6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B432283371EB00151DEC /* PostingVC.swift */; };
 		6AE8B4362833720200151DEC /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4352833720200151DEC /* AlbumVC.swift */; };
 		6AE8B4382833776800151DEC /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4372833776800151DEC /* tabBarController.swift */; };
@@ -59,7 +58,6 @@
 		6AE8B42928336E5600151DEC /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		6AE8B42A28336E5800151DEC /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		6AE8B42C283370B400151DEC /* Posting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posting.storyboard; sourceTree = "<group>"; };
-		6AE8B42E283370C400151DEC /* Album.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Album.storyboard; sourceTree = "<group>"; };
 		6AE8B432283371EB00151DEC /* PostingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingVC.swift; sourceTree = "<group>"; };
 		6AE8B4352833720200151DEC /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
 		6AE8B4372833776800151DEC /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 		6AE8B42128336D7100151DEC /* Album */ = {
 			isa = PBXGroup;
 			children = (
-				6AE8B42E283370C400151DEC /* Album.storyboard */,
 				6AE8B4352833720200151DEC /* AlbumVC.swift */,
 			);
 			path = Album;
@@ -305,7 +302,6 @@
 				6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */,
 				6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */,
 				6AE8B40B2833665800151DEC /* Main.storyboard in Resources */,
-				6AE8B42F283370C400151DEC /* Album.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
