@@ -35,6 +35,8 @@
 		9B0B3F442838FEE30012A279 /* TVC_Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F422838FEE30012A279 /* TVC_Comments.swift */; };
 		9B0B3F452838FEE30012A279 /* TVC_Comments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F432838FEE30012A279 /* TVC_Comments.xib */; };
 		9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B18305C2838DBA200E0C13B /* Album.storyboard */; };
+		9B8A3BE4283D93D900A4FDB4 /* TVC_PlayBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE2283D93D900A4FDB4 /* TVC_PlayBtnCell.swift */; };
+		9B8A3BE5283D93D900A4FDB4 /* TVC_PlayBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE3283D93D900A4FDB4 /* TVC_PlayBtnCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		9B0B3F422838FEE30012A279 /* TVC_Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_Comments.swift; sourceTree = "<group>"; };
 		9B0B3F432838FEE30012A279 /* TVC_Comments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_Comments.xib; sourceTree = "<group>"; };
 		9B18305C2838DBA200E0C13B /* Album.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Album.storyboard; sourceTree = "<group>"; };
+		9B8A3BE2283D93D900A4FDB4 /* TVC_PlayBtnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_PlayBtnCell.swift; sourceTree = "<group>"; };
+		9B8A3BE3283D93D900A4FDB4 /* TVC_PlayBtnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_PlayBtnCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				6AE8B4352833720200151DEC /* AlbumVC.swift */,
+				9B8A3BE2283D93D900A4FDB4 /* TVC_PlayBtnCell.swift */,
+				9B8A3BE3283D93D900A4FDB4 /* TVC_PlayBtnCell.xib */,
 				9B0B3F3E2838FECF0012A279 /* TVC_AlbumHead.swift */,
 				9B0B3F422838FEE30012A279 /* TVC_Comments.swift */,
 				9B0B3F432838FEE30012A279 /* TVC_Comments.xib */,
@@ -339,6 +345,7 @@
 				6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */,
 				6AE8B40B2833665800151DEC /* Main.storyboard in Resources */,
 				9B0B3F3D2838FE9E0012A279 /* TVC_AlbumList.xib in Resources */,
+				9B8A3BE5283D93D900A4FDB4 /* TVC_PlayBtnCell.xib in Resources */,
 				9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */,
 				9B0B3F392838FE660012A279 /* TVC_AlbumInfo.xib in Resources */,
 				9B0B3F452838FEE30012A279 /* TVC_Comments.xib in Resources */,
@@ -370,6 +377,7 @@
 				6A90B57F2833D02B00E273E5 /* UIViewController+.swift in Sources */,
 				6A90B5A028356ACA00E273E5 /* UICollectionViewRegisterable.swift in Sources */,
 				6AE8B4062833665800151DEC /* SceneDelegate.swift in Sources */,
+				9B8A3BE4283D93D900A4FDB4 /* TVC_PlayBtnCell.swift in Sources */,
 				6A90B5772833CFAC00E273E5 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
