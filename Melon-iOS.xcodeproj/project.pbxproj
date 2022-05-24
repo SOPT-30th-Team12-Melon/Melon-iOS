@@ -26,6 +26,15 @@
 		6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B432283371EB00151DEC /* PostingVC.swift */; };
 		6AE8B4362833720200151DEC /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4352833720200151DEC /* AlbumVC.swift */; };
 		6AE8B4382833776800151DEC /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4372833776800151DEC /* tabBarController.swift */; };
+		9B0B3F382838FE660012A279 /* TVC_AlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F362838FE660012A279 /* TVC_AlbumInfo.swift */; };
+		9B0B3F392838FE660012A279 /* TVC_AlbumInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F372838FE660012A279 /* TVC_AlbumInfo.xib */; };
+		9B0B3F3C2838FE9E0012A279 /* TVC_AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F3A2838FE9E0012A279 /* TVC_AlbumList.swift */; };
+		9B0B3F3D2838FE9E0012A279 /* TVC_AlbumList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F3B2838FE9E0012A279 /* TVC_AlbumList.xib */; };
+		9B0B3F402838FECF0012A279 /* TVC_AlbumHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F3E2838FECF0012A279 /* TVC_AlbumHead.swift */; };
+		9B0B3F412838FECF0012A279 /* TVC_AlbumHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F3F2838FECF0012A279 /* TVC_AlbumHead.xib */; };
+		9B0B3F442838FEE30012A279 /* TVC_Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F422838FEE30012A279 /* TVC_Comments.swift */; };
+		9B0B3F452838FEE30012A279 /* TVC_Comments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F432838FEE30012A279 /* TVC_Comments.xib */; };
+		9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B18305C2838DBA200E0C13B /* Album.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +70,15 @@
 		6AE8B432283371EB00151DEC /* PostingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingVC.swift; sourceTree = "<group>"; };
 		6AE8B4352833720200151DEC /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
 		6AE8B4372833776800151DEC /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
+		9B0B3F362838FE660012A279 /* TVC_AlbumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_AlbumInfo.swift; sourceTree = "<group>"; };
+		9B0B3F372838FE660012A279 /* TVC_AlbumInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_AlbumInfo.xib; sourceTree = "<group>"; };
+		9B0B3F3A2838FE9E0012A279 /* TVC_AlbumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_AlbumList.swift; sourceTree = "<group>"; };
+		9B0B3F3B2838FE9E0012A279 /* TVC_AlbumList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_AlbumList.xib; sourceTree = "<group>"; };
+		9B0B3F3E2838FECF0012A279 /* TVC_AlbumHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_AlbumHead.swift; sourceTree = "<group>"; };
+		9B0B3F3F2838FECF0012A279 /* TVC_AlbumHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_AlbumHead.xib; sourceTree = "<group>"; };
+		9B0B3F422838FEE30012A279 /* TVC_Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_Comments.swift; sourceTree = "<group>"; };
+		9B0B3F432838FEE30012A279 /* TVC_Comments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_Comments.xib; sourceTree = "<group>"; };
+		9B18305C2838DBA200E0C13B /* Album.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Album.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +160,7 @@
 		6AE8B41928336C3100151DEC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9B18305E2838DBB900E0C13B /* Storyboard */,
 				6A90B5822833E00D00E273E5 /* Font */,
 				6AE8B42B28336E7500151DEC /* Support */,
 			);
@@ -218,6 +237,14 @@
 			isa = PBXGroup;
 			children = (
 				6AE8B4352833720200151DEC /* AlbumVC.swift */,
+				9B0B3F3E2838FECF0012A279 /* TVC_AlbumHead.swift */,
+				9B0B3F422838FEE30012A279 /* TVC_Comments.swift */,
+				9B0B3F432838FEE30012A279 /* TVC_Comments.xib */,
+				9B0B3F3F2838FECF0012A279 /* TVC_AlbumHead.xib */,
+				9B0B3F3A2838FE9E0012A279 /* TVC_AlbumList.swift */,
+				9B0B3F3B2838FE9E0012A279 /* TVC_AlbumList.xib */,
+				9B0B3F362838FE660012A279 /* TVC_AlbumInfo.swift */,
+				9B0B3F372838FE660012A279 /* TVC_AlbumInfo.xib */,
 			);
 			path = Album;
 			sourceTree = "<group>";
@@ -238,6 +265,14 @@
 				6AE8B4052833665800151DEC /* SceneDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		9B18305E2838DBB900E0C13B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9B18305C2838DBA200E0C13B /* Album.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +334,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AE8B4102833665A00151DEC /* LaunchScreen.storyboard in Resources */,
+				9B0B3F412838FECF0012A279 /* TVC_AlbumHead.xib in Resources */,
 				6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */,
 				6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */,
 				6AE8B40B2833665800151DEC /* Main.storyboard in Resources */,
+				9B0B3F3D2838FE9E0012A279 /* TVC_AlbumList.xib in Resources */,
+				9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */,
+				9B0B3F392838FE660012A279 /* TVC_AlbumInfo.xib in Resources */,
+				9B0B3F452838FEE30012A279 /* TVC_Comments.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +358,11 @@
 				6AE8B4082833665800151DEC /* MainVC.swift in Sources */,
 				6A90B5792833CFC800E273E5 /* UIFont+.swift in Sources */,
 				6A90B57528338F4400E273E5 /* Constant.swift in Sources */,
+				9B0B3F442838FEE30012A279 /* TVC_Comments.swift in Sources */,
+				9B0B3F3C2838FE9E0012A279 /* TVC_AlbumList.swift in Sources */,
+				9B0B3F402838FECF0012A279 /* TVC_AlbumHead.swift in Sources */,
 				6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */,
+				9B0B3F382838FE660012A279 /* TVC_AlbumInfo.swift in Sources */,
 				6AE8B4382833776800151DEC /* tabBarController.swift in Sources */,
 				6A90B5812833D04000E273E5 /* UIStackView+.swift in Sources */,
 				6A90B57B2833CFE000E273E5 /* UILabel+.swift in Sources */,
@@ -478,7 +522,7 @@
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Album;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +550,7 @@
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Album;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
