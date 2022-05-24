@@ -29,6 +29,8 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Album</string>
+                    <key>UIUserInterfaceStyle</key>
+                    <string>Dark</string>
 				</dict>
 			</array>
 		</dict>
