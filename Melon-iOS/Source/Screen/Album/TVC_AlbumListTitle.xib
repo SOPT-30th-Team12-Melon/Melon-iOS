@@ -57,7 +57,7 @@
                             <constraint firstAttribute="width" constant="26" id="l3P-Df-1pZ"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="ic_play_midi"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_play_small"/>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,6 +83,6 @@
     <resources>
         <image name="album_ic_title" width="26" height="12"/>
         <image name="ic_more" width="27" height="26"/>
-        <image name="ic_play_midi" width="34" height="34"/>
+        <image name="ic_play_small" width="23" height="23"/>
     </resources>
 </document>
