@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="322"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-ch-Ep1">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy1" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-ch-Ep1">
                         <rect key="frame" x="108" y="9" width="159" height="159"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="bcu-ch-Ep1" secondAttribute="height" multiplier="1:1" id="d1O-gC-wp0"/>
@@ -99,20 +99,14 @@
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="ic_info_album" title=""/>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-Pd-hGb">
-                        <rect key="frame" x="15" y="238" width="40" height="40"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile3" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-Pd-hGb">
+                        <rect key="frame" x="15" y="238" width="30" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="M4q-Bd-8ei"/>
+                            <constraint firstAttribute="width" constant="30" id="M4q-Bd-8ei"/>
                             <constraint firstAttribute="height" constant="40" id="lCB-C6-AWx"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32x-jh-eNt">
-                        <rect key="frame" x="55" y="251" width="62.333333333333343" height="15"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gj2-7y-YfG">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_hrt" translatesAutoresizingMaskIntoConstraints="NO" id="Gj2-7y-YfG">
                         <rect key="frame" x="17" y="289" width="23" height="23"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="23" id="Sse-ho-qrY"/>
@@ -125,7 +119,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xdo-tE-YS7">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cmt" translatesAutoresizingMaskIntoConstraints="NO" id="xdo-tE-YS7">
                         <rect key="frame" x="69" y="289" width="23" height="23"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="23" id="JFh-1H-nsb"/>
@@ -136,6 +130,12 @@
                         <rect key="frame" x="95" y="294" width="7.6666666666666714" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32x-jh-eNt">
+                        <rect key="frame" x="49" y="251" width="62.333333333333343" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -168,7 +168,7 @@
                     <constraint firstItem="xAM-Zz-VRL" firstAttribute="leading" secondItem="5CR-Ye-FlU" secondAttribute="trailing" constant="17" id="jnd-or-H1w"/>
                     <constraint firstItem="uY8-9G-vic" firstAttribute="leading" secondItem="45r-MZ-Lvk" secondAttribute="trailing" constant="9" id="k8x-Kl-kwA"/>
                     <constraint firstAttribute="trailing" secondItem="bcu-ch-Ep1" secondAttribute="trailing" constant="108" id="leS-Ym-NHL"/>
-                    <constraint firstItem="32x-jh-eNt" firstAttribute="leading" secondItem="Bio-Pd-hGb" secondAttribute="trailing" id="nF3-nQ-Th0"/>
+                    <constraint firstItem="32x-jh-eNt" firstAttribute="leading" secondItem="Bio-Pd-hGb" secondAttribute="trailing" constant="4" id="nF3-nQ-Th0"/>
                     <constraint firstItem="uY8-9G-vic" firstAttribute="top" secondItem="5CR-Ye-FlU" secondAttribute="bottom" constant="7" id="obA-Me-bLu"/>
                     <constraint firstItem="9t9-1N-iXO" firstAttribute="leading" secondItem="xAM-Zz-VRL" secondAttribute="trailing" id="qX9-A8-i3x"/>
                     <constraint firstItem="zkA-zp-MXK" firstAttribute="top" secondItem="32x-jh-eNt" secondAttribute="bottom" constant="28" id="qwR-AO-Xlm"/>
@@ -186,7 +186,11 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="dummy1" width="120" height="120"/>
+        <image name="ic_cmt" width="22" height="22"/>
+        <image name="ic_hrt" width="24" height="24"/>
         <image name="ic_info_album" width="20" height="30"/>
+        <image name="ic_profile3" width="24" height="24"/>
         <image name="ic_star0" width="14" height="14"/>
         <image name="ic_star100-1" width="14" height="14"/>
         <image name="ic_star50" width="14" height="14"/>
