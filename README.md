@@ -12,8 +12,7 @@
 | :---: | :---: | :---: |
 | ![KakaoTalk_Photo_2022-05-26-15-48-31](https://user-images.githubusercontent.com/51031771/170434276-cbc9aaa8-f4a1-4dc8-befd-558c92f04f31.png)
 | ![KakaoTalk_Photo_2022-05-26-15-47-11](https://user-images.githubusercontent.com/51031771/170434375-39f2cafd-53e7-4a67-97a0-d37b47bf0eb3.png)
- |![KakaoTalk_Photo_2022-05-26-15-46-29](https://user-images.githubusercontent.com/51031771/170434415-5deb3bf1-7ac0-4b3b-af18-bb8b876ef1f6.png)
-|
+ |![KakaoTalk_Photo_2022-05-26-15-46-29](https://user-images.githubusercontent.com/51031771/170434415-5deb3bf1-7ac0-4b3b-af18-bb8b876ef1f6.png)|
 |`PostingView`|`DetailView`|`MainView`|
 
 
