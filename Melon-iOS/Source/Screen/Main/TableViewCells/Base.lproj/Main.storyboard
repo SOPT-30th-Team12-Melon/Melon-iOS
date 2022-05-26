@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DDd-7R-aap">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="Melon_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-yc-H4g">
+                                <rect key="frame" x="0.0" y="30" width="375" height="1657"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteMusicTVC" rowHeight="305" id="cmF-Y4-IfD" customClass="FavoriteMusicTVC">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="305"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cmF-Y4-IfD" id="SEx-E1-5uK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="305"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.86959644420000004" green="0.95275958859999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicProjectTVC" rowHeight="199" id="0Ma-Z7-Sjd" customClass="MusicProjectTVC" customModule="Melon_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="349.66666603088379" width="375" height="199"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Ma-Z7-Sjd" id="qZY-x0-MJz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="1" green="0.89097607899999998" blue="0.95444501940000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewMusicTVC" rowHeight="288" id="4vn-Z8-dZA" customClass="NewMusicTVC" customModule="Melon_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="548.66666603088379" width="375" height="288"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4vn-Z8-dZA" id="TZA-Jz-PD2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.87102177349999999" green="0.95692484430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Top3TVC" rowHeight="285" id="wFs-fO-5Nk" customClass="Top3TVC" customModule="Melon_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="836.66666603088379" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wFs-fO-5Nk" id="hax-70-hnh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="0.33333333329999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMusicTVC" rowHeight="451" id="DzU-Uf-D2h" customClass="CustomMusicTVC" customModule="Melon_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1121.6666660308838" width="375" height="451"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DzU-Uf-D2h" id="yos-re-BQJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="1" green="0.92235116900000003" blue="0.95370376990000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EXZ-WY-AIc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="cmQ-yc-H4g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RCB-hx-egF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cmQ-yc-H4g" secondAttribute="bottom" constant="30" id="Toc-F8-mVd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cmQ-yc-H4g" secondAttribute="trailing" id="iBu-Vr-MkA"/>
+                            <constraint firstItem="cmQ-yc-H4g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="zc7-vC-GI2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" id="CBH-ie-CR2"/>
+                    <navigationItem key="navigationItem" id="V9C-Vt-aUx"/>
+                    <size key="freeformSize" width="375" height="1800"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="cmQ-yc-H4g" id="u21-9T-Nct"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.5999999999999" y="988.66995073891633"/>
+        </scene>
+        <!--AlbumVC-->
+        <scene sceneID="kNx-dN-XDw">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AlbumVC" storyboardName="Album" referencedIdentifier="AlbumVC" id="bsJ-jK-aKt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="d8C-B8-okc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSH-GL-yzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="319"/>
+        </scene>
+        <!--PostingVC-->
+        <scene sceneID="0lp-sz-hN3">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PostingVC" storyboardName="Posting" referencedIdentifier="PostingVC" id="nkl-yl-wsn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xeW-fQ-aZE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b45-b8-hM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521" y="319"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="A2h-7h-Imj">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="DDd-7R-aap" customClass="tabBarController" customModule="Melon_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2FB-Sg-WIv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lVx-hd-rdo"/>
+                        <segue destination="bsJ-jK-aKt" kind="relationship" relationship="viewControllers" id="0cN-xu-8si"/>
+                        <segue destination="nkl-yl-wsn" kind="relationship" relationship="viewControllers" id="8c2-Kp-hQT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8as-04-whq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="-176"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,14 +7,15 @@
 
 import UIKit
 
-// Music
+// Music : 최신 음악
 struct MusicDataModel {
-    let albumCoverImageName: String
+    let albumId: String //albumId
+    let albumCoverImageName: String //image
     var albumImage: UIImage? {
         return UIImage(named: albumCoverImageName)
     }
-    let musicTitle: String
-    let artist: String
+    let musicTitle: String  //title
+    let artist: String  //singer
     var artistLabel: String? {
         return "-    \(artist)"
     }
@@ -22,22 +23,22 @@ struct MusicDataModel {
 // Dummy
 extension MusicDataModel {
     static let sampleData: [MusicDataModel] = [
-        MusicDataModel(albumCoverImageName: "image url1", musicTitle: "title1", artist: "artist1"),
-        MusicDataModel(albumCoverImageName: "image url2", musicTitle: "title2", artist: "artist2"),
-        MusicDataModel(albumCoverImageName: "image url3", musicTitle: "title3", artist: "artist3")
+        MusicDataModel(albumId: "1", albumCoverImageName: "image url1", musicTitle: "title1", artist: "artist1"),
+        MusicDataModel(albumId: "2", albumCoverImageName: "image url2", musicTitle: "title2", artist: "artist2"),
+        MusicDataModel(albumId: "3", albumCoverImageName: "image url3", musicTitle: "title3", artist: "artist3")
     ]
 }
 
 
-// Curation
+// Curation : 내가 좋아할 음악(내 추천 음악)
 struct CurationDataModel {
-    let curationTitle: String
-    let themaCoverImageName: String
+    let curationTitle: String   //title
+    let themaCoverImageName: String //image
     var themaImage: UIImage? {
         return UIImage(named: themaCoverImageName)
     }
-    let themaTitle: String
-    let themahashtag: String
+    let themaTitle: String  //body
+    let themahashtag: String    //hashtag
 }
 // Dummy
 extension CurationDataModel {
