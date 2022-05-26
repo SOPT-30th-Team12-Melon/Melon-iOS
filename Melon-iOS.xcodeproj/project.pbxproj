@@ -37,12 +37,21 @@
 		9B8A3BE5283D93D900A4FDB4 /* PlayBtnCellTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE3283D93D900A4FDB4 /* PlayBtnCellTVC.xib */; };
 		9B8A3BE8283D99DA00A4FDB4 /* AlbumListTitleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE6283D99DA00A4FDB4 /* AlbumListTitleTVC.swift */; };
 		9B8A3BE9283D99DA00A4FDB4 /* AlbumListTitleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE7283D99DA00A4FDB4 /* AlbumListTitleTVC.xib */; };
-		9B8A3BEC283D9AB300A4FDB4 /* AlbumListHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEA283D9AB300A4FDB4 /* AlbumListHeaderTVC.swift */; };
-		9B8A3BED283D9AB300A4FDB4 /* AlbumListHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderTVC.xib */; };
+		9B8A3BED283D9AB300A4FDB4 /* AlbumListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderView.xib */; };
 		9B8A3BF0283E283E00A4FDB4 /* AlbumListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEE283E283E00A4FDB4 /* AlbumListTVC.swift */; };
 		9B8A3BF1283E283E00A4FDB4 /* AlbumListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEF283E283E00A4FDB4 /* AlbumListTVC.xib */; };
-		9B8A3BF4283EA27200A4FDB4 /* CommentHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BF2283EA27200A4FDB4 /* CommentHeaderTVC.swift */; };
-		9B8A3BF5283EA27200A4FDB4 /* CommentHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BF3283EA27200A4FDB4 /* CommentHeaderTVC.xib */; };
+		9B8A3BF5283EA27200A4FDB4 /* CommentsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BF3283EA27200A4FDB4 /* CommentsHeaderView.xib */; };
+		9B8E60E6283F69750000A4DC /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5952834A26D00E273E5 /* Pretendard-Black.ttf */; };
+		9B8E60E7283F69780000A4DC /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59A2834A26E00E273E5 /* Pretendard-Bold.ttf */; };
+		9B8E60E8283F697B0000A4DC /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5962834A26D00E273E5 /* Pretendard-ExtraBold.ttf */; };
+		9B8E60E9283F697F0000A4DC /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5982834A26E00E273E5 /* Pretendard-Regular.ttf */; };
+		9B8E60EA283F697F0000A4DC /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59B2834A26E00E273E5 /* Pretendard-SemiBold.ttf */; };
+		9B8E60EB283F697F0000A4DC /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5992834A26E00E273E5 /* Pretendard-Thin.ttf */; };
+		9B8E60EC283F697F0000A4DC /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59D2834A26E00E273E5 /* Pretendard-ExtraLight.ttf */; };
+		9B8E60ED283F697F0000A4DC /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59C2834A26E00E273E5 /* Pretendard-Light.ttf */; };
+		9B8E60EE283F697F0000A4DC /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5972834A26D00E273E5 /* Pretendard-Medium.ttf */; };
+		9B8E60F0283FB5680000A4DC /* AlbumListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E60EF283FB5680000A4DC /* AlbumListHeaderView.swift */; };
+		9B8E60F2283FB7230000A4DC /* CommentsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E60F1283FB7230000A4DC /* CommentsHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,12 +98,12 @@
 		9B8A3BE3283D93D900A4FDB4 /* PlayBtnCellTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayBtnCellTVC.xib; sourceTree = "<group>"; };
 		9B8A3BE6283D99DA00A4FDB4 /* AlbumListTitleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListTitleTVC.swift; sourceTree = "<group>"; };
 		9B8A3BE7283D99DA00A4FDB4 /* AlbumListTitleTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListTitleTVC.xib; sourceTree = "<group>"; };
-		9B8A3BEA283D9AB300A4FDB4 /* AlbumListHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListHeaderTVC.swift; sourceTree = "<group>"; };
-		9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListHeaderTVC.xib; sourceTree = "<group>"; };
+		9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListHeaderView.xib; sourceTree = "<group>"; };
 		9B8A3BEE283E283E00A4FDB4 /* AlbumListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListTVC.swift; sourceTree = "<group>"; };
 		9B8A3BEF283E283E00A4FDB4 /* AlbumListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListTVC.xib; sourceTree = "<group>"; };
-		9B8A3BF2283EA27200A4FDB4 /* CommentHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentHeaderTVC.swift; sourceTree = "<group>"; };
-		9B8A3BF3283EA27200A4FDB4 /* CommentHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentHeaderTVC.xib; sourceTree = "<group>"; };
+		9B8A3BF3283EA27200A4FDB4 /* CommentsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsHeaderView.xib; sourceTree = "<group>"; };
+		9B8E60EF283FB5680000A4DC /* AlbumListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListHeaderView.swift; sourceTree = "<group>"; };
+		9B8E60F1283FB7230000A4DC /* CommentsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,20 +262,20 @@
 			isa = PBXGroup;
 			children = (
 				6AE8B4352833720200151DEC /* AlbumVC.swift */,
+				9B8E60EF283FB5680000A4DC /* AlbumListHeaderView.swift */,
 				9B8A3BE2283D93D900A4FDB4 /* PlayBtnCellTVC.swift */,
 				9B8A3BE3283D93D900A4FDB4 /* PlayBtnCellTVC.xib */,
 				9B0B3F3E2838FECF0012A279 /* AlbumHeadTVC.swift */,
 				9B0B3F422838FEE30012A279 /* CommentsTVC.swift */,
 				9B0B3F432838FEE30012A279 /* CommentsTVC.xib */,
-				9B8A3BF2283EA27200A4FDB4 /* CommentHeaderTVC.swift */,
-				9B8A3BF3283EA27200A4FDB4 /* CommentHeaderTVC.xib */,
+				9B8A3BF3283EA27200A4FDB4 /* CommentsHeaderView.xib */,
+				9B8E60F1283FB7230000A4DC /* CommentsHeaderView.swift */,
 				9B0B3F3F2838FECF0012A279 /* AlbumHeadTVC.xib */,
 				9B8A3BE6283D99DA00A4FDB4 /* AlbumListTitleTVC.swift */,
 				9B8A3BE7283D99DA00A4FDB4 /* AlbumListTitleTVC.xib */,
 				9B8A3BEE283E283E00A4FDB4 /* AlbumListTVC.swift */,
 				9B8A3BEF283E283E00A4FDB4 /* AlbumListTVC.xib */,
-				9B8A3BEA283D9AB300A4FDB4 /* AlbumListHeaderTVC.swift */,
-				9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderTVC.xib */,
+				9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderView.xib */,
 				9B0B3F362838FE660012A279 /* AlbumInfoTVC.swift */,
 				9B0B3F372838FE660012A279 /* AlbumInfoTVC.xib */,
 			);
@@ -357,19 +366,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8E60EA283F697F0000A4DC /* Pretendard-SemiBold.ttf in Resources */,
 				6AE8B4102833665A00151DEC /* LaunchScreen.storyboard in Resources */,
+				9B8E60E7283F69780000A4DC /* Pretendard-Bold.ttf in Resources */,
+				9B8E60E9283F697F0000A4DC /* Pretendard-Regular.ttf in Resources */,
 				9B0B3F412838FECF0012A279 /* AlbumHeadTVC.xib in Resources */,
 				9B8A3BE9283D99DA00A4FDB4 /* AlbumListTitleTVC.xib in Resources */,
+				9B8E60ED283F697F0000A4DC /* Pretendard-Light.ttf in Resources */,
 				6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */,
+				9B8E60EE283F697F0000A4DC /* Pretendard-Medium.ttf in Resources */,
+				9B8E60EC283F697F0000A4DC /* Pretendard-ExtraLight.ttf in Resources */,
 				6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */,
 				6AE8B40B2833665800151DEC /* Main.storyboard in Resources */,
-				9B8A3BED283D9AB300A4FDB4 /* AlbumListHeaderTVC.xib in Resources */,
+				9B8A3BED283D9AB300A4FDB4 /* AlbumListHeaderView.xib in Resources */,
+				9B8E60EB283F697F0000A4DC /* Pretendard-Thin.ttf in Resources */,
+				9B8E60E6283F69750000A4DC /* Pretendard-Black.ttf in Resources */,
 				9B8A3BE5283D93D900A4FDB4 /* PlayBtnCellTVC.xib in Resources */,
 				9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */,
 				9B0B3F392838FE660012A279 /* AlbumInfoTVC.xib in Resources */,
 				9B8A3BF1283E283E00A4FDB4 /* AlbumListTVC.xib in Resources */,
-				9B8A3BF5283EA27200A4FDB4 /* CommentHeaderTVC.xib in Resources */,
+				9B8A3BF5283EA27200A4FDB4 /* CommentsHeaderView.xib in Resources */,
 				9B0B3F452838FEE30012A279 /* CommentsTVC.xib in Resources */,
+				9B8E60E8283F697B0000A4DC /* Pretendard-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8E60F2283FB7230000A4DC /* CommentsHeaderView.swift in Sources */,
 				6A90B57D2833CFF000E273E5 /* UIView+.swift in Sources */,
 				6AE8B4362833720200151DEC /* AlbumVC.swift in Sources */,
-				9B8A3BEC283D9AB300A4FDB4 /* AlbumListHeaderTVC.swift in Sources */,
 				6A90B5A228356AE100E273E5 /* UITableViewRegisterable.swift in Sources */,
 				6AE8B4082833665800151DEC /* MainVC.swift in Sources */,
 				6A90B5792833CFC800E273E5 /* UIFont+.swift in Sources */,
@@ -390,10 +408,10 @@
 				9B0B3F442838FEE30012A279 /* CommentsTVC.swift in Sources */,
 				9B0B3F402838FECF0012A279 /* AlbumHeadTVC.swift in Sources */,
 				9B8A3BE8283D99DA00A4FDB4 /* AlbumListTitleTVC.swift in Sources */,
+				9B8E60F0283FB5680000A4DC /* AlbumListHeaderView.swift in Sources */,
 				6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */,
 				9B0B3F382838FE660012A279 /* AlbumInfoTVC.swift in Sources */,
 				9B8A3BF0283E283E00A4FDB4 /* AlbumListTVC.swift in Sources */,
-				9B8A3BF4283EA27200A4FDB4 /* CommentHeaderTVC.swift in Sources */,
 				6AE8B4382833776800151DEC /* tabBarController.swift in Sources */,
 				6A90B5812833D04000E273E5 /* UIStackView+.swift in Sources */,
 				6A90B57B2833CFE000E273E5 /* UILabel+.swift in Sources */,

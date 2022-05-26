@@ -31,11 +31,16 @@ class AlbumVC: UIViewController {
             albumTableView.register($1, forCellReuseIdentifier: identifiers[$0])
         }
         
+        albumTableView.register(UINib(nibName:"AlbumListHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "AlbumListHeaderView")
+        albumTableView.register(UINib(nibName:"CommentsHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "CommentsHeaderView")
+        
     }
     
 }
 
 extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
+    
+   
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -72,5 +77,28 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
             
         }
         }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 3{
+            guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "AlbumListHeaderView") as? AlbumListHeaderView else {return UIView()}
+            return headerView
+        }
+        else if section == 4{
+            guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "CommentsHeaderView") as? CommentsHeaderView else {return UIView()}
+            return headerView
+        }
+        else{
+            return nil
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 3 || section == 4 {
+            return UITableView.automaticDimension
+        }
+        else {
+            return 0
+        }
+    }
 }
 
