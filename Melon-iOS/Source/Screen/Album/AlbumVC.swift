@@ -15,7 +15,6 @@ class AlbumVC: UIViewController {
 
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         albumTableView.delegate = self
@@ -51,7 +50,6 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(1)
         switch indexPath.section{
         case 0:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? AlbumHeadTVC else {return UITableViewCell()}
