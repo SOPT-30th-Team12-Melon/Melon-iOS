@@ -1,5 +1,5 @@
 //
-//  TVC_Comments.swift
+//  TVC_AlbumHead.swift
 //  Melon-iOS
 //
 //  Created by 이의진 on 2022/05/21.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TVC_Comments: UITableViewCell {
+class AlbumHeadTVC: UITableViewCell {
     
-    static let identifier = "TVC_Comments"
+    static let identifier = "AlbumHeadTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()

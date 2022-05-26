@@ -1,5 +1,5 @@
 //
-//  TVC_AlbumList_title.swift
+//  TVC_AlbumTitle.swift
 //  Melon-iOS
 //
 //  Created by 이의진 on 2022/05/25.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TVC_AlbumList_title: UITableViewCell {
+class AlbumListTVC: UITableViewCell {
     
-    static let identifier = "TVC_AlbumList_title"
+    static let identifier = "AlbumListTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()

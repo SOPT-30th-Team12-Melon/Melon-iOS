@@ -1,15 +1,15 @@
 //
-//  TVC_PlayBtnCell.swift
+//  CommentHeader.swift
 //  Melon-iOS
 //
-//  Created by 이의진 on 2022/05/25.
+//  Created by 이의진 on 2022/05/26.
 //
 
 import UIKit
 
-class TVC_PlayBtnCell: UITableViewCell {
+class CommentHeaderTVC: UITableViewCell {
     
-    static let identifier = "TVC_PlayBtnCell"
+    static let identifier = "CommentHeaderTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()

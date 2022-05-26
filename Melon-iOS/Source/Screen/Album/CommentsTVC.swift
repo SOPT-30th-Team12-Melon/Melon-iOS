@@ -1,15 +1,15 @@
 //
-//  TVC_AlbumListHeader.swift
+//  TVC_Comments.swift
 //  Melon-iOS
 //
-//  Created by 이의진 on 2022/05/25.
+//  Created by 이의진 on 2022/05/21.
 //
 
 import UIKit
 
-class TVC_AlbumListHeader: UITableViewCell {
+class CommentsTVC: UITableViewCell {
     
-    static let identifier = "TVC_AlbumListHeader"
+    static let identifier = "CommentsTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()

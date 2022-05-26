@@ -22,7 +22,7 @@ class AlbumVC: UIViewController {
     }
     
     private func registerCell(){
-        let identifiers = [TVC_AlbumHead.identifier, TVC_PlayBtnCell.identifier, TVC_AlbumList_title.identifier, TVC_AlbumInfo.identifier, TVC_Comments.identifier]
+        let identifiers = [AlbumHeadTVC.identifier, PlayBtnCellTVC.identifier, AlbumListTitleTVC.identifier, AlbumInfoTVC.identifier, CommentsTVC.identifier]
         var nib : [UINib] = []
         identifiers.forEach{
             nib.append(UINib(nibName: $0, bundle: nil))

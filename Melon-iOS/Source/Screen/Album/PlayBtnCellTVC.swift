@@ -1,15 +1,15 @@
 //
-//  TVC_AlbumHead.swift
+//  TVC_PlayBtnCell.swift
 //  Melon-iOS
 //
-//  Created by 이의진 on 2022/05/21.
+//  Created by 이의진 on 2022/05/25.
 //
 
 import UIKit
 
-class TVC_AlbumHead: UITableViewCell {
+class PlayBtnCellTVC: UITableViewCell {
     
-    static let identifier = "TVC_AlbumHead"
+    static let identifier = "PlayBtnCellTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TVC_AlbumInfo: UITableViewCell {
+class AlbumInfoTVC: UITableViewCell {
     
-    static let identifier = "TVC_AlbumInfo"
+    static let identifier = "AlbumInfoTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()
