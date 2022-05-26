@@ -16,6 +16,15 @@
 		6A90B5812833D04000E273E5 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B5802833D04000E273E5 /* UIStackView+.swift */; };
 		6A90B5A028356ACA00E273E5 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B59F28356ACA00E273E5 /* UICollectionViewRegisterable.swift */; };
 		6A90B5A228356AE100E273E5 /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90B5A128356AE100E273E5 /* UITableViewRegisterable.swift */; };
+		6A9A2BAD283F68AC00F64E26 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5962834A26D00E273E5 /* Pretendard-ExtraBold.ttf */; };
+		6A9A2BAE283F68AF00F64E26 /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59D2834A26E00E273E5 /* Pretendard-ExtraLight.ttf */; };
+		6A9A2BAF283F68B100F64E26 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59C2834A26E00E273E5 /* Pretendard-Light.ttf */; };
+		6A9A2BB0283F68B300F64E26 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5972834A26D00E273E5 /* Pretendard-Medium.ttf */; };
+		6A9A2BB1283F68B500F64E26 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5982834A26E00E273E5 /* Pretendard-Regular.ttf */; };
+		6A9A2BB2283F68B700F64E26 /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59B2834A26E00E273E5 /* Pretendard-SemiBold.ttf */; };
+		6A9A2BB3283F68BA00F64E26 /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5992834A26E00E273E5 /* Pretendard-Thin.ttf */; };
+		6A9A2BB4283F692000F64E26 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59A2834A26E00E273E5 /* Pretendard-Bold.ttf */; };
+		6A9A2BB5283F692600F64E26 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5952834A26D00E273E5 /* Pretendard-Black.ttf */; };
 		6AE8B4042833665800151DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4032833665800151DEC /* AppDelegate.swift */; };
 		6AE8B4062833665800151DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4052833665800151DEC /* SceneDelegate.swift */; };
 		6AE8B4082833665800151DEC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4072833665800151DEC /* MainVC.swift */; };
