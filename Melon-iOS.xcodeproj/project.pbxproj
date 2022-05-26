@@ -23,10 +23,35 @@
 		6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B40C2833665A00151DEC /* Assets.xcassets */; };
 		6AE8B4102833665A00151DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B40E2833665A00151DEC /* LaunchScreen.storyboard */; };
 		6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B42C283370B400151DEC /* Posting.storyboard */; };
-		6AE8B42F283370C400151DEC /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8B42E283370C400151DEC /* Album.storyboard */; };
 		6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B432283371EB00151DEC /* PostingVC.swift */; };
 		6AE8B4362833720200151DEC /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4352833720200151DEC /* AlbumVC.swift */; };
 		6AE8B4382833776800151DEC /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8B4372833776800151DEC /* tabBarController.swift */; };
+		9B0B3F382838FE660012A279 /* AlbumInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F362838FE660012A279 /* AlbumInfoTVC.swift */; };
+		9B0B3F392838FE660012A279 /* AlbumInfoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F372838FE660012A279 /* AlbumInfoTVC.xib */; };
+		9B0B3F402838FECF0012A279 /* AlbumHeadTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F3E2838FECF0012A279 /* AlbumHeadTVC.swift */; };
+		9B0B3F412838FECF0012A279 /* AlbumHeadTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F3F2838FECF0012A279 /* AlbumHeadTVC.xib */; };
+		9B0B3F442838FEE30012A279 /* CommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F422838FEE30012A279 /* CommentsTVC.swift */; };
+		9B0B3F452838FEE30012A279 /* CommentsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B3F432838FEE30012A279 /* CommentsTVC.xib */; };
+		9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B18305C2838DBA200E0C13B /* Album.storyboard */; };
+		9B8A3BE4283D93D900A4FDB4 /* PlayBtnCellTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE2283D93D900A4FDB4 /* PlayBtnCellTVC.swift */; };
+		9B8A3BE5283D93D900A4FDB4 /* PlayBtnCellTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE3283D93D900A4FDB4 /* PlayBtnCellTVC.xib */; };
+		9B8A3BE8283D99DA00A4FDB4 /* AlbumListTitleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE6283D99DA00A4FDB4 /* AlbumListTitleTVC.swift */; };
+		9B8A3BE9283D99DA00A4FDB4 /* AlbumListTitleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BE7283D99DA00A4FDB4 /* AlbumListTitleTVC.xib */; };
+		9B8A3BED283D9AB300A4FDB4 /* AlbumListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderView.xib */; };
+		9B8A3BF0283E283E00A4FDB4 /* AlbumListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEE283E283E00A4FDB4 /* AlbumListTVC.swift */; };
+		9B8A3BF1283E283E00A4FDB4 /* AlbumListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BEF283E283E00A4FDB4 /* AlbumListTVC.xib */; };
+		9B8A3BF5283EA27200A4FDB4 /* CommentsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8A3BF3283EA27200A4FDB4 /* CommentsHeaderView.xib */; };
+		9B8E60E6283F69750000A4DC /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5952834A26D00E273E5 /* Pretendard-Black.ttf */; };
+		9B8E60E7283F69780000A4DC /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59A2834A26E00E273E5 /* Pretendard-Bold.ttf */; };
+		9B8E60E8283F697B0000A4DC /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5962834A26D00E273E5 /* Pretendard-ExtraBold.ttf */; };
+		9B8E60E9283F697F0000A4DC /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5982834A26E00E273E5 /* Pretendard-Regular.ttf */; };
+		9B8E60EA283F697F0000A4DC /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59B2834A26E00E273E5 /* Pretendard-SemiBold.ttf */; };
+		9B8E60EB283F697F0000A4DC /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5992834A26E00E273E5 /* Pretendard-Thin.ttf */; };
+		9B8E60EC283F697F0000A4DC /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59D2834A26E00E273E5 /* Pretendard-ExtraLight.ttf */; };
+		9B8E60ED283F697F0000A4DC /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B59C2834A26E00E273E5 /* Pretendard-Light.ttf */; };
+		9B8E60EE283F697F0000A4DC /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A90B5972834A26D00E273E5 /* Pretendard-Medium.ttf */; };
+		9B8E60F0283FB5680000A4DC /* AlbumListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E60EF283FB5680000A4DC /* AlbumListHeaderView.swift */; };
+		9B8E60F2283FB7230000A4DC /* CommentsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8E60F1283FB7230000A4DC /* CommentsHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,10 +84,26 @@
 		6AE8B42928336E5600151DEC /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		6AE8B42A28336E5800151DEC /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		6AE8B42C283370B400151DEC /* Posting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posting.storyboard; sourceTree = "<group>"; };
-		6AE8B42E283370C400151DEC /* Album.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Album.storyboard; sourceTree = "<group>"; };
 		6AE8B432283371EB00151DEC /* PostingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingVC.swift; sourceTree = "<group>"; };
 		6AE8B4352833720200151DEC /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
 		6AE8B4372833776800151DEC /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
+		9B0B3F362838FE660012A279 /* AlbumInfoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfoTVC.swift; sourceTree = "<group>"; };
+		9B0B3F372838FE660012A279 /* AlbumInfoTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumInfoTVC.xib; sourceTree = "<group>"; };
+		9B0B3F3E2838FECF0012A279 /* AlbumHeadTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHeadTVC.swift; sourceTree = "<group>"; };
+		9B0B3F3F2838FECF0012A279 /* AlbumHeadTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumHeadTVC.xib; sourceTree = "<group>"; };
+		9B0B3F422838FEE30012A279 /* CommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTVC.swift; sourceTree = "<group>"; };
+		9B0B3F432838FEE30012A279 /* CommentsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTVC.xib; sourceTree = "<group>"; };
+		9B18305C2838DBA200E0C13B /* Album.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Album.storyboard; sourceTree = "<group>"; };
+		9B8A3BE2283D93D900A4FDB4 /* PlayBtnCellTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBtnCellTVC.swift; sourceTree = "<group>"; };
+		9B8A3BE3283D93D900A4FDB4 /* PlayBtnCellTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayBtnCellTVC.xib; sourceTree = "<group>"; };
+		9B8A3BE6283D99DA00A4FDB4 /* AlbumListTitleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListTitleTVC.swift; sourceTree = "<group>"; };
+		9B8A3BE7283D99DA00A4FDB4 /* AlbumListTitleTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListTitleTVC.xib; sourceTree = "<group>"; };
+		9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListHeaderView.xib; sourceTree = "<group>"; };
+		9B8A3BEE283E283E00A4FDB4 /* AlbumListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListTVC.swift; sourceTree = "<group>"; };
+		9B8A3BEF283E283E00A4FDB4 /* AlbumListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListTVC.xib; sourceTree = "<group>"; };
+		9B8A3BF3283EA27200A4FDB4 /* CommentsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsHeaderView.xib; sourceTree = "<group>"; };
+		9B8E60EF283FB5680000A4DC /* AlbumListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListHeaderView.swift; sourceTree = "<group>"; };
+		9B8E60F1283FB7230000A4DC /* CommentsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +185,7 @@
 		6AE8B41928336C3100151DEC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9B18305E2838DBB900E0C13B /* Storyboard */,
 				6A90B5822833E00D00E273E5 /* Font */,
 				6AE8B42B28336E7500151DEC /* Support */,
 			);
@@ -219,8 +261,23 @@
 		6AE8B42128336D7100151DEC /* Album */ = {
 			isa = PBXGroup;
 			children = (
-				6AE8B42E283370C400151DEC /* Album.storyboard */,
 				6AE8B4352833720200151DEC /* AlbumVC.swift */,
+				9B8E60EF283FB5680000A4DC /* AlbumListHeaderView.swift */,
+				9B8A3BE2283D93D900A4FDB4 /* PlayBtnCellTVC.swift */,
+				9B8A3BE3283D93D900A4FDB4 /* PlayBtnCellTVC.xib */,
+				9B0B3F3E2838FECF0012A279 /* AlbumHeadTVC.swift */,
+				9B0B3F422838FEE30012A279 /* CommentsTVC.swift */,
+				9B0B3F432838FEE30012A279 /* CommentsTVC.xib */,
+				9B8A3BF3283EA27200A4FDB4 /* CommentsHeaderView.xib */,
+				9B8E60F1283FB7230000A4DC /* CommentsHeaderView.swift */,
+				9B0B3F3F2838FECF0012A279 /* AlbumHeadTVC.xib */,
+				9B8A3BE6283D99DA00A4FDB4 /* AlbumListTitleTVC.swift */,
+				9B8A3BE7283D99DA00A4FDB4 /* AlbumListTitleTVC.xib */,
+				9B8A3BEE283E283E00A4FDB4 /* AlbumListTVC.swift */,
+				9B8A3BEF283E283E00A4FDB4 /* AlbumListTVC.xib */,
+				9B8A3BEB283D9AB300A4FDB4 /* AlbumListHeaderView.xib */,
+				9B0B3F362838FE660012A279 /* AlbumInfoTVC.swift */,
+				9B0B3F372838FE660012A279 /* AlbumInfoTVC.xib */,
 			);
 			path = Album;
 			sourceTree = "<group>";
@@ -241,6 +298,14 @@
 				6AE8B4052833665800151DEC /* SceneDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		9B18305E2838DBB900E0C13B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9B18305C2838DBA200E0C13B /* Album.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +366,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8E60EA283F697F0000A4DC /* Pretendard-SemiBold.ttf in Resources */,
 				6AE8B4102833665A00151DEC /* LaunchScreen.storyboard in Resources */,
+				9B8E60E7283F69780000A4DC /* Pretendard-Bold.ttf in Resources */,
+				9B8E60E9283F697F0000A4DC /* Pretendard-Regular.ttf in Resources */,
+				9B0B3F412838FECF0012A279 /* AlbumHeadTVC.xib in Resources */,
+				9B8A3BE9283D99DA00A4FDB4 /* AlbumListTitleTVC.xib in Resources */,
+				9B8E60ED283F697F0000A4DC /* Pretendard-Light.ttf in Resources */,
 				6AE8B42D283370B400151DEC /* Posting.storyboard in Resources */,
+				9B8E60EE283F697F0000A4DC /* Pretendard-Medium.ttf in Resources */,
+				9B8E60EC283F697F0000A4DC /* Pretendard-ExtraLight.ttf in Resources */,
 				6AE8B40D2833665A00151DEC /* Assets.xcassets in Resources */,
 				6AE8B40B2833665800151DEC /* Main.storyboard in Resources */,
-				6AE8B42F283370C400151DEC /* Album.storyboard in Resources */,
+				9B8A3BED283D9AB300A4FDB4 /* AlbumListHeaderView.xib in Resources */,
+				9B8E60EB283F697F0000A4DC /* Pretendard-Thin.ttf in Resources */,
+				9B8E60E6283F69750000A4DC /* Pretendard-Black.ttf in Resources */,
+				9B8A3BE5283D93D900A4FDB4 /* PlayBtnCellTVC.xib in Resources */,
+				9B18305D2838DBA200E0C13B /* Album.storyboard in Resources */,
+				9B0B3F392838FE660012A279 /* AlbumInfoTVC.xib in Resources */,
+				9B8A3BF1283E283E00A4FDB4 /* AlbumListTVC.xib in Resources */,
+				9B8A3BF5283EA27200A4FDB4 /* CommentsHeaderView.xib in Resources */,
+				9B0B3F452838FEE30012A279 /* CommentsTVC.xib in Resources */,
+				9B8E60E8283F697B0000A4DC /* Pretendard-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,13 +398,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8E60F2283FB7230000A4DC /* CommentsHeaderView.swift in Sources */,
 				6A90B57D2833CFF000E273E5 /* UIView+.swift in Sources */,
 				6AE8B4362833720200151DEC /* AlbumVC.swift in Sources */,
 				6A90B5A228356AE100E273E5 /* UITableViewRegisterable.swift in Sources */,
 				6AE8B4082833665800151DEC /* MainVC.swift in Sources */,
 				6A90B5792833CFC800E273E5 /* UIFont+.swift in Sources */,
 				6A90B57528338F4400E273E5 /* Constant.swift in Sources */,
+				9B0B3F442838FEE30012A279 /* CommentsTVC.swift in Sources */,
+				9B0B3F402838FECF0012A279 /* AlbumHeadTVC.swift in Sources */,
+				9B8A3BE8283D99DA00A4FDB4 /* AlbumListTitleTVC.swift in Sources */,
+				9B8E60F0283FB5680000A4DC /* AlbumListHeaderView.swift in Sources */,
 				6AE8B433283371EB00151DEC /* PostingVC.swift in Sources */,
+				9B0B3F382838FE660012A279 /* AlbumInfoTVC.swift in Sources */,
+				9B8A3BF0283E283E00A4FDB4 /* AlbumListTVC.swift in Sources */,
 				6AE8B4382833776800151DEC /* tabBarController.swift in Sources */,
 				6A90B5812833D04000E273E5 /* UIStackView+.swift in Sources */,
 				6A90B57B2833CFE000E273E5 /* UILabel+.swift in Sources */,
@@ -330,6 +419,7 @@
 				6A90B57F2833D02B00E273E5 /* UIViewController+.swift in Sources */,
 				6A90B5A028356ACA00E273E5 /* UICollectionViewRegisterable.swift in Sources */,
 				6AE8B4062833665800151DEC /* SceneDelegate.swift in Sources */,
+				9B8A3BE4283D93D900A4FDB4 /* PlayBtnCellTVC.swift in Sources */,
 				6A90B5772833CFAC00E273E5 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,12 +567,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3H85AXMVD3;
+				DEVELOPMENT_TEAM = H7X76GFF7D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Album;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,12 +595,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3H85AXMVD3;
+				DEVELOPMENT_TEAM = H7X76GFF7D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Album;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

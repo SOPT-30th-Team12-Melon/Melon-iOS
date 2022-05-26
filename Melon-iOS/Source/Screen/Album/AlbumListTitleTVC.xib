@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Medium.ttf">
+            <string>Pretendard-Medium</string>
+        </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="375" indentationWidth="10" reuseIdentifier="AlbumListTitleTVC" rowHeight="48" id="KGk-i7-Jjw" customClass="AlbumListTitleTVC" customModule="Melon_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aN-CC-1g6">
+                        <rect key="frame" x="21" y="13" width="14.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                        <color key="textColor" name="12MelonLightgray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="마음을 담아줘 (With 슬로(Sllo))" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-2W-vQR">
+                        <rect key="frame" x="75" y="4" width="291" height="17"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-Nz-M7i">
+                        <rect key="frame" x="46" y="24" width="62.5" height="15"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                        <color key="textColor" name="12MelonLightgray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_ic_title" translatesAutoresizingMaskIntoConstraints="NO" id="LAJ-Av-eou">
+                        <rect key="frame" x="46" y="6" width="26" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="4pw-xb-hvC"/>
+                            <constraint firstAttribute="width" constant="26" id="uYN-6Q-BgA"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYP-0P-Xqr">
+                        <rect key="frame" x="340" y="9" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Q2Q-2k-6i5"/>
+                            <constraint firstAttribute="height" constant="24" id="k3m-2d-iK7"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_more"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ri-bl-JEX">
+                        <rect key="frame" x="313" y="9" width="26" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Yf6-sZ-YrR"/>
+                            <constraint firstAttribute="width" constant="26" id="l3P-Df-1pZ"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_play_small"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" name="12MelonDarkgray"/>
+                <constraints>
+                    <constraint firstItem="4aN-CC-1g6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="41s-Gj-ljj"/>
+                    <constraint firstItem="4aN-CC-1g6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="KvV-h6-c3F"/>
+                    <constraint firstItem="0Ri-bl-JEX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="M53-Ga-NPh"/>
+                    <constraint firstAttribute="trailing" secondItem="qYP-0P-Xqr" secondAttribute="trailing" constant="11" id="PXE-Ke-Pq2"/>
+                    <constraint firstItem="lZ7-Nz-M7i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="46" id="Zmz-Zb-qGa"/>
+                    <constraint firstItem="qYP-0P-Xqr" firstAttribute="leading" secondItem="0Ri-bl-JEX" secondAttribute="trailing" constant="1" id="dOh-fG-6zb"/>
+                    <constraint firstAttribute="bottom" secondItem="lZ7-Nz-M7i" secondAttribute="bottom" constant="9" id="fzA-lQ-dYx"/>
+                    <constraint firstItem="qYP-0P-Xqr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="hqz-oH-nrE"/>
+                    <constraint firstItem="LFC-2W-vQR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="jCE-IT-5Ob"/>
+                    <constraint firstItem="LAJ-Av-eou" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="lC7-wo-0YG"/>
+                    <constraint firstItem="LAJ-Av-eou" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="46" id="nw9-D1-ncS"/>
+                    <constraint firstItem="lZ7-Nz-M7i" firstAttribute="top" secondItem="LAJ-Av-eou" secondAttribute="bottom" constant="6" id="uxZ-re-njg"/>
+                    <constraint firstItem="LFC-2W-vQR" firstAttribute="leading" secondItem="LAJ-Av-eou" secondAttribute="trailing" constant="3" id="wnd-pJ-yL0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="128.2608695652174" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="album_ic_title" width="26" height="12"/>
+        <image name="ic_more" width="27" height="26"/>
+        <image name="ic_play_small" width="23" height="23"/>
+        <namedColor name="12MelonDarkgray">
+            <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="12MelonLightgray">
+            <color red="0.81599998474121094" green="0.81599998474121094" blue="0.81599998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

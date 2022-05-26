@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumInfoTVC" rowHeight="328" id="KGk-i7-Jjw" customClass="AlbumInfoTVC" customModule="Melon_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="300.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앨범 소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USp-rf-bCN">
+                        <rect key="frame" x="20" y="41" width="74" height="24"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장르" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDo-qc-zgX">
+                        <rect key="frame" x="20" y="95" width="34" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="Tbo-t7-3nA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-Fa-FAS">
+                        <rect key="frame" x="20" y="73" width="34" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="ApS-J2-Wdy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발매일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-g1-pSG">
+                        <rect key="frame" x="20" y="117" width="34" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="IQM-JJ-NgG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발매사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mF-z7-fTK">
+                        <rect key="frame" x="20" y="139" width="34" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기획사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxd-Jn-Jz7">
+                        <rect key="frame" x="20" y="161" width="34" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="싱글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOj-IC-p7V">
+                        <rect key="frame" x="67" y="73" width="22.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랩/힙합/인디음악" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUe-eb-hFv">
+                        <rect key="frame" x="67" y="95" width="87.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.05.12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kP-CB-ChQ">
+                        <rect key="frame" x="67" y="117" width="64.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="워너뮤직" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEm-OJ-knj">
+                        <rect key="frame" x="67" y="139" width="45" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMPT$ TAPE RECORD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsq-OQ-3zV">
+                        <rect key="frame" x="67" y="161" width="130" height="16"/>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHB-YS-t6Q">
+                        <rect key="frame" x="20" y="208" width="339" height="62.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="339" id="Dv5-ep-tAg"/>
+                        </constraints>
+                        <string key="text">행복했던 기억, 그때 그 마음들을 이 노래에 담아주세요.
+힘들다 느껴질 때 이 노래가 위로가 될 수 있게.
+[cREDIT]Lyrics by 타코앤제이형Composed by 
+타코앤제이형, 조영현Arranged by 타코앤제이형Vocal </string>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="12MelonDarkgray"/>
+                <constraints>
+                    <constraint firstItem="MUe-eb-hFv" firstAttribute="top" secondItem="BOj-IC-p7V" secondAttribute="bottom" constant="6" id="0u8-LS-4hf"/>
+                    <constraint firstItem="dsq-OQ-3zV" firstAttribute="top" secondItem="rEm-OJ-knj" secondAttribute="bottom" constant="6" id="41p-Dk-A6v"/>
+                    <constraint firstItem="BOj-IC-p7V" firstAttribute="top" secondItem="USp-rf-bCN" secondAttribute="bottom" constant="8" id="4oP-gs-LEe"/>
+                    <constraint firstItem="rEm-OJ-knj" firstAttribute="top" secondItem="5kP-CB-ChQ" secondAttribute="bottom" constant="6" id="6zu-wR-b3H"/>
+                    <constraint firstItem="USp-rf-bCN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="DFh-oa-enw"/>
+                    <constraint firstItem="dsq-OQ-3zV" firstAttribute="leading" secondItem="Lxd-Jn-Jz7" secondAttribute="trailing" constant="13" id="ECA-ng-NFg"/>
+                    <constraint firstItem="Lxd-Jn-Jz7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FLB-Hg-h6y"/>
+                    <constraint firstItem="5kP-CB-ChQ" firstAttribute="top" secondItem="MUe-eb-hFv" secondAttribute="bottom" constant="6" id="NoD-Hn-hJs"/>
+                    <constraint firstAttribute="bottom" secondItem="SHB-YS-t6Q" secondAttribute="bottom" constant="30" id="OkL-7S-ZiF"/>
+                    <constraint firstItem="Lxd-Jn-Jz7" firstAttribute="top" secondItem="0mF-z7-fTK" secondAttribute="bottom" constant="6" id="Pdc-xN-Ya0"/>
+                    <constraint firstItem="SHB-YS-t6Q" firstAttribute="top" secondItem="Lxd-Jn-Jz7" secondAttribute="bottom" constant="31" id="Qv6-gq-6GK"/>
+                    <constraint firstItem="XDo-qc-zgX" firstAttribute="top" secondItem="bE2-Fa-FAS" secondAttribute="bottom" constant="6" id="Uti-Jx-3X0"/>
+                    <constraint firstItem="5kP-CB-ChQ" firstAttribute="leading" secondItem="7dR-g1-pSG" secondAttribute="trailing" constant="13" id="bqh-NM-GEc"/>
+                    <constraint firstItem="SHB-YS-t6Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="d3O-tz-5l6"/>
+                    <constraint firstItem="BOj-IC-p7V" firstAttribute="leading" secondItem="bE2-Fa-FAS" secondAttribute="trailing" constant="13" id="dCe-jB-viV"/>
+                    <constraint firstItem="bE2-Fa-FAS" firstAttribute="top" secondItem="USp-rf-bCN" secondAttribute="bottom" constant="8" id="e3w-wR-B0s"/>
+                    <constraint firstItem="0mF-z7-fTK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fOy-dG-e9B"/>
+                    <constraint firstItem="USp-rf-bCN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gW1-P2-hHT"/>
+                    <constraint firstItem="0mF-z7-fTK" firstAttribute="top" secondItem="7dR-g1-pSG" secondAttribute="bottom" constant="6" id="jff-b9-99Z"/>
+                    <constraint firstItem="7dR-g1-pSG" firstAttribute="top" secondItem="XDo-qc-zgX" secondAttribute="bottom" constant="6" id="kfM-Rk-Qz6"/>
+                    <constraint firstItem="MUe-eb-hFv" firstAttribute="leading" secondItem="XDo-qc-zgX" secondAttribute="trailing" constant="13" id="osh-Ip-WZJ"/>
+                    <constraint firstItem="7dR-g1-pSG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="t7W-rj-H5z"/>
+                    <constraint firstItem="XDo-qc-zgX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uwe-0J-jNJ"/>
+                    <constraint firstItem="rEm-OJ-knj" firstAttribute="leading" secondItem="Lxd-Jn-Jz7" secondAttribute="trailing" constant="13" id="wzb-sk-vDX"/>
+                    <constraint firstItem="bE2-Fa-FAS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ylP-JL-zGS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="138.40579710144928" y="222.65625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="12MelonDarkgray">
+            <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

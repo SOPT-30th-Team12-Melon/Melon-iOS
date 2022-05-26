@@ -9,21 +9,96 @@ import UIKit
 
 class AlbumVC: UIViewController {
 
+    @IBOutlet weak var albumTableView: UITableView!
+    var sections = [("AlbumHead", 1), ("PlayBtn", 1), ("AlbumInfo", 1), ("AlbumList", 1), ("Comment", 3)]
+    let identifiers = [AlbumHeadTVC.identifier, PlayBtnCellTVC.identifier, AlbumListTitleTVC.identifier, AlbumInfoTVC.identifier, CommentsTVC.identifier]
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        albumTableView.delegate = self
+        albumTableView.dataSource = self
+        registerCell()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func registerCell(){
+        var nib : [UINib] = []
+        identifiers.forEach{
+            nib.append(UINib(nibName: $0, bundle: nil))
+        }
+        nib.enumerated().forEach{
+            albumTableView.register($1, forCellReuseIdentifier: identifiers[$0])
+        }
+        
+        albumTableView.register(UINib(nibName:"AlbumListHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "AlbumListHeaderView")
+        albumTableView.register(UINib(nibName:"CommentsHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "CommentsHeaderView")
+        
     }
-    */
-
+    
 }
+
+extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
+    
+   
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sections[section].1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.section{
+        case 0:
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? AlbumHeadTVC else {return UITableViewCell()}
+            return cell
+        case 1:
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? PlayBtnCellTVC else {return UITableViewCell()}
+            return cell
+        case 2:
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[2], for: indexPath) as? AlbumListTitleTVC else {return UITableViewCell()}
+            return cell
+        case 3:
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[3], for: indexPath) as? AlbumInfoTVC else {return UITableViewCell()}
+            return cell
+        case 4:
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[4], for: indexPath) as? CommentsTVC else {return UITableViewCell()}
+            return cell
+        default:
+            let cell = UITableViewCell()
+            return cell
+            
+        }
+        }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 2{
+            guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "AlbumListHeaderView") as? AlbumListHeaderView else {return UIView()}
+            return headerView
+        }
+        else if section == 4{
+            guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "CommentsHeaderView") as? CommentsHeaderView else {return UIView()}
+            return headerView
+        }
+        else{
+            return nil
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 2 || section == 4 {
+            return UITableView.automaticDimension
+        }
+        else {
+            return 0
+        }
+    }
+}
+
