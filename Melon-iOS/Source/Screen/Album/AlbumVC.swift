@@ -79,7 +79,7 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 3{
+        if section == 2{
             guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "AlbumListHeaderView") as? AlbumListHeaderView else {return UIView()}
             return headerView
         }
@@ -93,7 +93,7 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 3 || section == 4 {
+        if section == 2 || section == 4 {
             return UITableView.automaticDimension
         }
         else {
