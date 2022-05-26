@@ -8,6 +8,8 @@
 import UIKit
 
 class CommentHeader: UITableViewCell {
+    
+    static let identifier = "CommentHeader"
 
     override func awakeFromNib() {
         super.awakeFromNib()

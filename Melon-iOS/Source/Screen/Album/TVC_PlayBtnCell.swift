@@ -8,6 +8,8 @@
 import UIKit
 
 class TVC_PlayBtnCell: UITableViewCell {
+    
+    static let identifier = "TVC_PlayBtnCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

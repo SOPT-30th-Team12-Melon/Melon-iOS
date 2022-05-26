@@ -8,6 +8,8 @@
 import UIKit
 
 class TVC_AlbumListHeader: UITableViewCell {
+    
+    static let identifier = "TVC_AlbumListHeader"
 
     override func awakeFromNib() {
         super.awakeFromNib()

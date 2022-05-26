@@ -8,6 +8,8 @@
 import UIKit
 
 class TVC_Comments: UITableViewCell {
+    
+    static let identifier = "TVC_Comments"
 
     override func awakeFromNib() {
         super.awakeFromNib()

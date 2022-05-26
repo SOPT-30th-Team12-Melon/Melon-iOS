@@ -74,6 +74,7 @@
                     <constraint firstItem="sZS-uU-J0m" firstAttribute="top" secondItem="rBj-In-R7O" secondAttribute="top" constant="9" id="la0-7G-1nk"/>
                     <constraint firstItem="Sxq-9b-Hof" firstAttribute="leading" secondItem="i2L-nl-IaR" secondAttribute="trailing" constant="10" id="m3H-PA-Nnr"/>
                     <constraint firstAttribute="trailing" secondItem="sZS-uU-J0m" secondAttribute="trailing" constant="11" id="mqt-EK-4v2"/>
+                    <constraint firstAttribute="bottom" secondItem="1nP-Wu-2RE" secondAttribute="bottom" constant="9" id="rHU-db-HRf"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="N0N-48-DUl"/>
