@@ -23,11 +23,22 @@
                         <color key="textColor" name="12MelonWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH0-qX-UI2">
+                        <rect key="frame" x="332" y="13" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="LQh-f3-7lN"/>
+                            <constraint firstAttribute="width" constant="26" id="W82-tx-Rc9"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="album_btn_post" title=""/>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" name="12MelonDarkgray"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Dcp-Qz-Rmc" secondAttribute="bottom" constant="18" id="FAO-Oa-3qW"/>
+                    <constraint firstAttribute="trailing" secondItem="RH0-qX-UI2" secondAttribute="trailing" constant="17" id="FWJ-gC-nkZ"/>
                     <constraint firstItem="Dcp-Qz-Rmc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="M29-XO-vJe"/>
+                    <constraint firstItem="RH0-qX-UI2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="bmN-yn-Tug"/>
                     <constraint firstItem="Dcp-Qz-Rmc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="nVN-dp-omv"/>
                 </constraints>
             </tableViewCellContentView>
@@ -36,6 +47,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="album_btn_post" width="26" height="26"/>
         <namedColor name="12MelonDarkgray">
             <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
