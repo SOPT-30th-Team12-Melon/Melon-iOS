@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TVC_AlbumListHeader: UITableViewCell {
+class AlbumListHeaderTVC: UITableViewCell {
     
     static let identifier = "AlbumListHeaderTVC"
 

@@ -19,7 +19,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="139" y="123"/>
         </tableViewCell>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="375" indentationWidth="10" rowHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-EF-L4I" customClass="TVC_AlbumList_title" customModule="Melon_iOS" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="375" indentationWidth="10" reuseIdentifier="AlbumListTVC" rowHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-EF-L4I" customClass="AlbumListTVC" customModule="Melon_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jdh-EF-L4I" id="rBj-In-R7O">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>

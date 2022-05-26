@@ -11,6 +11,8 @@ class AlbumVC: UIViewController {
 
     @IBOutlet weak var albumTableView: UITableView!
     var sections = [("AlbumHead", 1), ("PlayBtn", 1), ("AlbumInfo", 1), ("AlbumList", 1), ("Comment", 3)]
+    let identifiers = [AlbumHeadTVC.identifier, PlayBtnCellTVC.identifier, AlbumListTitleTVC.identifier, AlbumInfoTVC.identifier, CommentsTVC.identifier]
+
     
     
     
@@ -22,7 +24,6 @@ class AlbumVC: UIViewController {
     }
     
     private func registerCell(){
-        let identifiers = [AlbumHeadTVC.identifier, PlayBtnCellTVC.identifier, AlbumListTitleTVC.identifier, AlbumInfoTVC.identifier, CommentsTVC.identifier]
         var nib : [UINib] = []
         identifiers.forEach{
             nib.append(UINib(nibName: $0, bundle: nil))
@@ -50,26 +51,28 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var sectionInfo : String = ""
+        print(1)
         switch indexPath.section{
         case 0:
-            sectionInfo = "TVC_AlbumHead"
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? AlbumHeadTVC else {return UITableViewCell()}
+            return cell
         case 1:
-            sectionInfo = "TVC_PlayBtnCell"
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? PlayBtnCellTVC else {return UITableViewCell()}
+            return cell
         case 2:
-            sectionInfo = "TVC_AlbumInfo"
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[2], for: indexPath) as? AlbumListTitleTVC else {return UITableViewCell()}
+            return cell
         case 3:
-            sectionInfo = "TVC_AlbumListTitle"
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[3], for: indexPath) as? AlbumInfoTVC else {return UITableViewCell()}
+            return cell
         case 4:
-            sectionInfo = "TVC_Comments"
-        default :
-            break
-        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: sectionInfo, for: indexPath)
+            guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[4], for: indexPath) as? CommentsTVC else {return UITableViewCell()}
+            return cell
+        default:
+            let cell = UITableViewCell()
+            return cell
             
-        return cell
+        }
         }
 }
 
