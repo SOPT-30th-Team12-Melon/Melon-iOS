@@ -17,8 +17,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="FXL-Mc-Z5j" customClass="FavoriteMusicCollectionViewCell" customModule="Melon_iOS" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FXL-Mc-Z5j" customClass="FavoriteMusicCollectionViewCell" customModule="Melon_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="226"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,12 +79,12 @@
                 <constraint firstItem="hie-eY-Z5h" firstAttribute="leading" secondItem="FXL-Mc-Z5j" secondAttribute="leading" id="wW8-He-U7Y"/>
                 <constraint firstAttribute="bottom" secondItem="uDb-0j-p4b" secondAttribute="bottom" id="yWx-CB-fUO"/>
             </constraints>
-            <connections>
-                <outlet property="curationLabel" destination="hie-eY-Z5h" id="0BC-hc-zsn"/>
-                <outlet property="themaCoverImage" destination="P12-bF-jHc" id="xgo-xU-mcm"/>
-                <outlet property="themaHashtagsLabel" destination="BZe-4X-Pnw" id="IbQ-d3-G28"/>
-                <outlet property="themaLabel" destination="eFN-fr-UPA" id="IsW-Js-FOC"/>
-            </connections>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
         </collectionViewCell>
     </objects>

@@ -53,6 +53,12 @@
                 <constraint firstItem="fxm-hF-ydO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OwN-ST-Rrc"/>
                 <constraint firstItem="vpx-Q5-BcA" firstAttribute="top" secondItem="fxm-hF-ydO" secondAttribute="bottom" constant="10" id="ZO7-tI-KEX"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
         </collectionViewCell>
     </objects>

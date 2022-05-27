@@ -1,5 +1,5 @@
 //
-//  Top3TVC.swift
+//  CustomMusicTVC.swift
 //  Melon-iOS
 //
 //  Created by 이의진 on 2022/05/27.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class Top3TVC: UITableViewCell {
+class CustomMusicTVC: UITableViewCell {
     
-    static let identifier = "Top3TVC"
+    static let identifier = "CustomMusicTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()

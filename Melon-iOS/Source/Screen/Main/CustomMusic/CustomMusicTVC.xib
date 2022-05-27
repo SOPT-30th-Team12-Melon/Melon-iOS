@@ -21,14 +21,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="451" translatesAutoresizingMaskIntoConstraints="NO" id="t50-na-AGG" customClass="TVC_CustomMusic" customModule="Melon_iOS" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMusicTVC" rowHeight="451" id="t50-na-AGG" customClass="CustomMusicTVC" customModule="Melon_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t50-na-AGG" id="7dr-1D-Etb">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noM-4D-M7A" customClass="top3view" customModule="Melon_iOS" customModuleProvider="target">
+                    <view contentMode="scaleToFill" id="noM-4D-M7A" customClass="top3view" customModule="Melon_iOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6t-On-xo6">
                                 <rect key="frame" x="191" y="75" width="164" height="164"/>
@@ -229,6 +231,7 @@
                             <constraint firstItem="kVc-NS-7BU" firstAttribute="top" secondItem="hvg-Fi-oto" secondAttribute="top" id="DJR-kD-oQX"/>
                             <constraint firstItem="Ux7-Lj-awm" firstAttribute="top" secondItem="noM-4D-M7A" secondAttribute="top" constant="24" id="DMj-ls-ifg"/>
                             <constraint firstItem="Eme-ae-Ku9" firstAttribute="top" secondItem="DWU-Ju-kVZ" secondAttribute="bottom" constant="29" id="IM4-xz-8hm"/>
+                            <constraint firstAttribute="bottom" secondItem="hvg-Fi-oto" secondAttribute="bottom" constant="42" id="LQB-lb-81Y"/>
                             <constraint firstItem="T6t-On-xo6" firstAttribute="width" secondItem="T6t-On-xo6" secondAttribute="height" multiplier="1:1" id="Lyj-op-YmP"/>
                             <constraint firstItem="DWU-Ju-kVZ" firstAttribute="leading" secondItem="noM-4D-M7A" secondAttribute="leading" constant="20" id="Ntz-lv-0gC"/>
                             <constraint firstItem="T6t-On-xo6" firstAttribute="leading" secondItem="Eme-ae-Ku9" secondAttribute="trailing" constant="7" id="XyA-2R-xsi"/>
@@ -250,7 +253,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="gVv-zA-PHL"/>
-            <point key="canvasLocation" x="146" y="184"/>
+            <point key="canvasLocation" x="145.6521739130435" y="183.81696428571428"/>
         </tableViewCell>
     </objects>
     <resources>
