@@ -12,9 +12,6 @@ class FavoriteMusicTVC: UITableViewCell {
     // MARK: - Vars & Lets Part
     static let identifier = "FavoriteMusicTVC"
 
-    // MARK: - UI Component Part
-    @IBOutlet weak var titleLabel: UILabel!
-
     // MARK: - Life Cycle Part
     override func awakeFromNib() {
         super.awakeFromNib()

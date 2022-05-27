@@ -12,6 +12,8 @@ class MusicProjectTVC: UITableViewCell {
     // cell
     static let identifier = "MusicProjectTVC"
 
+    @IBOutlet weak var projectImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
