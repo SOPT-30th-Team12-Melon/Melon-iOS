@@ -49,12 +49,14 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.row{
         case 0:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? FavoriteMusicTVC else {return UITableViewCell()}
+           
             return cell
         case 1:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? MusicProjectTVC else {return UITableViewCell()}
             return cell
         case 2:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[2], for: indexPath) as? NewMusicTVC else {return UITableViewCell()}
+            cell.collectionViewGetReady()
             return cell
         case 3:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[3], for: indexPath) as? Top3TVC else {return UITableViewCell()}

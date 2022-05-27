@@ -15,8 +15,6 @@ class NewMusicTVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        setDelegate()
-        registerCell()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -40,8 +38,16 @@ class NewMusicTVC: UITableViewCell {
         
     }
     
+    func collectionViewGetReady(){
+        setDelegate()
+        registerCell()
+        print(1)
+    }
+    
+    
+    
 }
-
+    
 extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return NewMusicItemDataModel.sampleData.count
