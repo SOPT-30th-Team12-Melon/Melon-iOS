@@ -8,10 +8,20 @@
 import UIKit
 
 class NewMusicItemCVC: UICollectionViewCell {
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var singer: UILabel!
+    
+    static let identifier = "NewMusicItemCVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    func setData(newMusicItemData: NewMusicItemDataModel){
+        image.image = UIImage(named:newMusicItemData.imageName)
+        title.text = newMusicItemData.title
+        singer.text = newMusicItemData.singer
+    }
 
 }

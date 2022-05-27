@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewMusicItemCVC" customModule="Melon_iOS" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewMusicItemCVC" id="gTV-IL-0wX" customClass="NewMusicItemCVC" customModule="Melon_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="150" height="196"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -30,13 +30,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마음을 담아줘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpx-Q5-BcA">
-                        <rect key="frame" x="0.0" y="160" width="87" height="20"/>
+                        <rect key="frame" x="0.0" y="160" width="87" height="19"/>
                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
                         <color key="textColor" name="12MelonWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cft-yy-CwQ">
-                        <rect key="frame" x="0.0" y="179" width="63" height="15"/>
+                        <rect key="frame" x="0.0" y="178" width="63" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonGray"/>
                         <nil key="highlightedColor"/>
@@ -59,6 +59,11 @@
                     <integer key="value" value="5"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="image" destination="fxm-hF-ydO" id="V3j-tz-lEA"/>
+                <outlet property="singer" destination="cft-yy-CwQ" id="zuK-XQ-yd8"/>
+                <outlet property="title" destination="vpx-Q5-BcA" id="lWN-mO-IcO"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
         </collectionViewCell>
     </objects>

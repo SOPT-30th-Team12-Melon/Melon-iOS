@@ -44,6 +44,7 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
         return UITableView.automaticDimension
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row{
         case 0:

@@ -8,7 +8,7 @@
 import UIKit
 
 class MusicProjectTVC: UITableViewCell {
-    
+
     static let identifier = "MusicProjectTVC"
 
     override func awakeFromNib() {
@@ -19,5 +19,4 @@ class MusicProjectTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    
 }
