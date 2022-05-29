@@ -41,7 +41,6 @@ class NewMusicTVC: UITableViewCell {
     func collectionViewGetReady(){
         setDelegate()
         registerCell()
-        print(1)
     }
     
     
@@ -70,6 +69,7 @@ extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
+        
     
     
     

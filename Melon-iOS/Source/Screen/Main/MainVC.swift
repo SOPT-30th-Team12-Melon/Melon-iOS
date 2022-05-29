@@ -41,6 +41,7 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return UITableView.automaticDimension
     }
     
@@ -49,7 +50,7 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.row{
         case 0:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? FavoriteMusicTVC else {return UITableViewCell()}
-           
+            cell.collectionViewGetReady()
             return cell
         case 1:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? MusicProjectTVC else {return UITableViewCell()}

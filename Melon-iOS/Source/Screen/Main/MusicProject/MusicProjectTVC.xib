@@ -24,9 +24,6 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="숨겨진 명곡 발굴 프로젝트 '트랙제로'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNI-mM-P3a">
                         <rect key="frame" x="20" y="19" width="201" height="17"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="17" id="PPB-gV-ITS"/>
-                        </constraints>
                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
                         <color key="textColor" name="12MelonLightgray"/>
                         <nil key="highlightedColor"/>

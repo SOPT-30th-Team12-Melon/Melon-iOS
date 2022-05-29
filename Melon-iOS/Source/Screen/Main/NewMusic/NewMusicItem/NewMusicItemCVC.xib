@@ -22,13 +22,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="196"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy2" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-hF-ydO">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="150" id="21Z-aH-BLh"/>
-                            <constraint firstAttribute="width" constant="150" id="n7O-g8-m3Q"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마음을 담아줘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpx-Q5-BcA">
                         <rect key="frame" x="0.0" y="160" width="87" height="19"/>
                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
@@ -36,22 +29,30 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cft-yy-CwQ">
-                        <rect key="frame" x="0.0" y="178" width="63" height="14"/>
+                        <rect key="frame" x="0.0" y="179" width="63" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonGray"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy2" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-hF-ydO">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fxm-hF-ydO" secondAttribute="height" multiplier="1:1" id="CqK-JR-Mqf"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" name="12MelonDarkgray"/>
             <constraints>
-                <constraint firstItem="vpx-Q5-BcA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3mR-kH-KlX"/>
-                <constraint firstItem="fxm-hF-ydO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Dj-gY-yxE"/>
-                <constraint firstItem="cft-yy-CwQ" firstAttribute="top" secondItem="vpx-Q5-BcA" secondAttribute="bottom" constant="-1" id="HJa-Su-lZX"/>
-                <constraint firstItem="cft-yy-CwQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Mqy-K6-2eA"/>
-                <constraint firstItem="fxm-hF-ydO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OwN-ST-Rrc"/>
-                <constraint firstItem="vpx-Q5-BcA" firstAttribute="top" secondItem="fxm-hF-ydO" secondAttribute="bottom" constant="10" id="ZO7-tI-KEX"/>
+                <constraint firstItem="vpx-Q5-BcA" firstAttribute="top" secondItem="fxm-hF-ydO" secondAttribute="bottom" constant="10" id="Lvb-iA-Gke"/>
+                <constraint firstItem="cft-yy-CwQ" firstAttribute="top" secondItem="vpx-Q5-BcA" secondAttribute="bottom" id="MfI-JF-X5m"/>
+                <constraint firstAttribute="bottom" secondItem="cft-yy-CwQ" secondAttribute="bottom" constant="3" id="NM0-1Q-vkV"/>
+                <constraint firstItem="fxm-hF-ydO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PPr-TV-yrd"/>
+                <constraint firstItem="fxm-hF-ydO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W4B-Vi-nQM"/>
+                <constraint firstItem="vpx-Q5-BcA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YBv-mM-hto"/>
+                <constraint firstItem="cft-yy-CwQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aPE-vu-mfM"/>
+                <constraint firstAttribute="trailing" secondItem="fxm-hF-ydO" secondAttribute="trailing" id="xlh-Kg-ekd"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>

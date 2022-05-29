@@ -8,9 +8,11 @@
 import UIKit
 
 class FavoriteMusicItemCVC: UICollectionViewCell {
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var hashtag: UILabel!
+    @IBOutlet weak var topic: UILabel!
     
     static let identifier = "FavoriteMusicItemCVC"
 
@@ -18,10 +20,11 @@ class FavoriteMusicItemCVC: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func setData(FavoriteMusicItem : FavoriteMusicItemDataModel){
-        image.image = UIImage(named: FavoriteMusicItem.imageName)
-        title.text = FavoriteMusicItem.title
-        hashtag.text = FavoriteMusicItem.hashTag
+    func setData(favoriteMusicItem : FavoriteMusicItemDataModel){
+        image.image = UIImage(named: favoriteMusicItem.imageName)
+        title.text = favoriteMusicItem.title
+        hashtag.text = favoriteMusicItem.hashTag
+        topic.text = favoriteMusicItem.topic
         
     }
 

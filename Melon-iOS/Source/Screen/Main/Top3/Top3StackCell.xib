@@ -16,13 +16,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="2tB-m0-dvP">
-            <rect key="frame" x="0.0" y="0.0" width="255" height="64"/>
+            <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qRJ-PJ-hxh">
                     <rect key="frame" x="8" y="8" width="48" height="48"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="qRJ-PJ-hxh" secondAttribute="height" multiplier="1:1" id="JH6-I0-UdP"/>
+                        <constraint firstAttribute="height" constant="48" id="jMy-5A-ivT"/>
+                        <constraint firstAttribute="width" constant="48" id="l2T-JK-yEx"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvO-Mf-0oK">
@@ -57,16 +58,16 @@
             <viewLayoutGuide key="safeArea" id="slZ-e4-7TY"/>
             <color key="backgroundColor" name="12MelonPoint1"/>
             <constraints>
+                <constraint firstItem="EvO-Mf-0oK" firstAttribute="leading" secondItem="qRJ-PJ-hxh" secondAttribute="trailing" constant="13" id="4TU-AB-oCV"/>
                 <constraint firstItem="N95-yC-fBJ" firstAttribute="top" secondItem="2tB-m0-dvP" secondAttribute="top" constant="16" id="BTc-Nq-9E9"/>
-                <constraint firstItem="qRJ-PJ-hxh" firstAttribute="leading" secondItem="2tB-m0-dvP" secondAttribute="leading" constant="8" id="GGF-ZN-AQQ"/>
-                <constraint firstItem="EvO-Mf-0oK" firstAttribute="leading" secondItem="qRJ-PJ-hxh" secondAttribute="trailing" constant="13" id="OS6-rB-wDJ"/>
+                <constraint firstItem="bXR-cR-Pkq" firstAttribute="leading" secondItem="qRJ-PJ-hxh" secondAttribute="trailing" constant="15" id="MDf-nj-4ia"/>
                 <constraint firstItem="EvO-Mf-0oK" firstAttribute="top" secondItem="2tB-m0-dvP" secondAttribute="top" constant="16" id="Qml-hR-gog"/>
+                <constraint firstItem="qRJ-PJ-hxh" firstAttribute="top" secondItem="2tB-m0-dvP" secondAttribute="top" constant="8" id="YXO-N9-Uwb"/>
+                <constraint firstItem="slZ-e4-7TY" firstAttribute="bottom" secondItem="qRJ-PJ-hxh" secondAttribute="bottom" constant="8" id="Ziz-Kh-zf5"/>
                 <constraint firstItem="cBr-sZ-Two" firstAttribute="leading" secondItem="bXR-cR-Pkq" secondAttribute="trailing" constant="15" id="cHP-DM-h7H"/>
                 <constraint firstItem="N95-yC-fBJ" firstAttribute="leading" secondItem="EvO-Mf-0oK" secondAttribute="trailing" constant="14" id="gcb-Ch-8sV"/>
-                <constraint firstItem="bXR-cR-Pkq" firstAttribute="leading" secondItem="qRJ-PJ-hxh" secondAttribute="trailing" constant="15" id="i3P-YL-Clx"/>
-                <constraint firstItem="qRJ-PJ-hxh" firstAttribute="top" secondItem="2tB-m0-dvP" secondAttribute="top" constant="8" id="kkN-8v-nbu"/>
+                <constraint firstItem="qRJ-PJ-hxh" firstAttribute="leading" secondItem="slZ-e4-7TY" secondAttribute="leading" constant="8" id="iwa-36-d0v"/>
                 <constraint firstItem="bXR-cR-Pkq" firstAttribute="top" secondItem="EvO-Mf-0oK" secondAttribute="bottom" constant="9" id="w4u-ee-oO6"/>
-                <constraint firstAttribute="bottom" secondItem="qRJ-PJ-hxh" secondAttribute="bottom" constant="8" id="wX3-U3-Qot"/>
                 <constraint firstItem="cBr-sZ-Two" firstAttribute="top" secondItem="N95-yC-fBJ" secondAttribute="bottom" constant="1" id="who-2f-aQG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
