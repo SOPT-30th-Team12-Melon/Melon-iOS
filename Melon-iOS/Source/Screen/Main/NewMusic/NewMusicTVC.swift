@@ -61,7 +61,7 @@ extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
         let cellWidth = width * (150/375)
-        let cellHeight = cellWidth * (196/150)
+        let cellHeight = cellWidth * (206/150)
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
@@ -69,7 +69,10 @@ extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
-        
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top:0, left: 0, bottom: 0, right: 0)
+    }
     
     
     

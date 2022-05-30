@@ -11,8 +11,8 @@ class FavoriteMusicItemCVC: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var hashtag: UILabel!
     @IBOutlet weak var topic: UILabel!
+    @IBOutlet weak var hashTag: UILabel!
     
     static let identifier = "FavoriteMusicItemCVC"
 
@@ -23,7 +23,7 @@ class FavoriteMusicItemCVC: UICollectionViewCell {
     func setData(favoriteMusicItem : FavoriteMusicItemDataModel){
         image.image = UIImage(named: favoriteMusicItem.imageName)
         title.text = favoriteMusicItem.title
-        hashtag.text = favoriteMusicItem.hashTag
+        hashTag.text = favoriteMusicItem.hashTag
         topic.text = favoriteMusicItem.topic
         
     }

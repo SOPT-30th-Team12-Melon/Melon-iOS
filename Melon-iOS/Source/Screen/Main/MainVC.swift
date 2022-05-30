@@ -42,6 +42,18 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        if indexPath.row == 0{
+            let width = UIScreen.main.bounds.width
+            let tableHeight = width * (319.5/375)
+            return tableHeight
+        }
+        
+        else if indexPath.row == 2{
+            let width = UIScreen.main.bounds.width
+            let tableHeight = width * (300/375)
+            return tableHeight
+        }
+        
         return UITableView.automaticDimension
     }
     

@@ -36,7 +36,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy1" translatesAutoresizingMaskIntoConstraints="NO" id="P12-bF-jHc">
                                 <rect key="frame" x="40" y="18" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="P12-bF-jHc" secondAttribute="height" multiplier="1:1" id="KF8-zD-NMM"/>
+                                    <constraint firstAttribute="width" secondItem="P12-bF-jHc" secondAttribute="height" multiplier="1:1" id="XJe-2N-opN"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POP 갬성 폭발 분위기 끝..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-fr-UPA">
@@ -55,13 +55,13 @@
                         <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BZe-4X-Pnw" firstAttribute="top" secondItem="eFN-fr-UPA" secondAttribute="bottom" constant="5" id="8r4-4s-vHz"/>
+                            <constraint firstAttribute="bottom" secondItem="BZe-4X-Pnw" secondAttribute="bottom" constant="13" id="BIU-u2-Nhu"/>
                             <constraint firstAttribute="trailing" secondItem="P12-bF-jHc" secondAttribute="trailing" constant="40" id="FB2-ei-OqA"/>
                             <constraint firstItem="P12-bF-jHc" firstAttribute="top" secondItem="uDb-0j-p4b" secondAttribute="top" constant="18" id="LLg-Fi-Uxk"/>
                             <constraint firstItem="P12-bF-jHc" firstAttribute="leading" secondItem="uDb-0j-p4b" secondAttribute="leading" constant="40" id="LpK-8i-t6M"/>
                             <constraint firstAttribute="trailing" secondItem="eFN-fr-UPA" secondAttribute="trailing" constant="14" id="SuN-Oa-WjP"/>
                             <constraint firstItem="eFN-fr-UPA" firstAttribute="top" secondItem="P12-bF-jHc" secondAttribute="bottom" constant="12" id="W6P-X9-jgv"/>
                             <constraint firstItem="eFN-fr-UPA" firstAttribute="leading" secondItem="uDb-0j-p4b" secondAttribute="leading" constant="14" id="dRO-mf-hr2"/>
-                            <constraint firstItem="P12-bF-jHc" firstAttribute="height" secondItem="uDb-0j-p4b" secondAttribute="height" multiplier="0.6" id="jpl-MS-Ksx"/>
                             <constraint firstItem="BZe-4X-Pnw" firstAttribute="leading" secondItem="uDb-0j-p4b" secondAttribute="leading" constant="14" id="pbw-uj-wOq"/>
                             <constraint firstAttribute="trailing" secondItem="BZe-4X-Pnw" secondAttribute="trailing" constant="14" id="sxA-vM-T3x"/>
                         </constraints>
@@ -77,9 +77,9 @@
             <viewLayoutGuide key="safeArea" id="rgc-Il-dzE"/>
             <constraints>
                 <constraint firstItem="uDb-0j-p4b" firstAttribute="top" secondItem="hie-eY-Z5h" secondAttribute="bottom" constant="9" id="Ds8-3R-OHW"/>
-                <constraint firstAttribute="bottom" secondItem="uDb-0j-p4b" secondAttribute="bottom" id="IWK-Wh-GvL"/>
                 <constraint firstItem="uDb-0j-p4b" firstAttribute="leading" secondItem="FXL-Mc-Z5j" secondAttribute="leading" id="O7x-IW-qI7"/>
                 <constraint firstAttribute="trailing" secondItem="uDb-0j-p4b" secondAttribute="trailing" id="Ugm-Kv-mPz"/>
+                <constraint firstAttribute="bottom" secondItem="uDb-0j-p4b" secondAttribute="bottom" id="X3T-ZA-aZt"/>
                 <constraint firstItem="hie-eY-Z5h" firstAttribute="leading" secondItem="FXL-Mc-Z5j" secondAttribute="leading" id="eWT-ax-f6V"/>
                 <constraint firstItem="hie-eY-Z5h" firstAttribute="top" secondItem="FXL-Mc-Z5j" secondAttribute="top" id="rwV-bk-H3g"/>
             </constraints>
@@ -90,7 +90,7 @@
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="hashtag" destination="hie-eY-Z5h" id="bWg-zq-FWW"/>
+                <outlet property="hashTag" destination="BZe-4X-Pnw" id="F4L-d6-CBp"/>
                 <outlet property="image" destination="P12-bF-jHc" id="Vfa-t7-Ikh"/>
                 <outlet property="title" destination="eFN-fr-UPA" id="wbS-hI-2W8"/>
                 <outlet property="topic" destination="hie-eY-Z5h" id="1x9-02-DOa"/>

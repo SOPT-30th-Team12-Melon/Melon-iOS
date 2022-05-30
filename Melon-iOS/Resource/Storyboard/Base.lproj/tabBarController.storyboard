@@ -3,47 +3,16 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main-->
+        <scene sceneID="30m-wr-08Z">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="Melon_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" id="CBH-ie-CR2"/>
-                    <navigationItem key="navigationItem" id="V9C-Vt-aUx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" id="HHf-Bm-NDG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjv-wc-TAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432" y="588"/>
-        </scene>
-        <!--AlbumVC-->
-        <scene sceneID="kNx-dN-XDw">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AlbumVC" storyboardName="Album" referencedIdentifier="AlbumVC" id="bsJ-jK-aKt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="d8C-B8-okc"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KSH-GL-yzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2014" y="319"/>
-        </scene>
-        <!--PostingVC-->
-        <scene sceneID="0lp-sz-hN3">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="PostingVC" storyboardName="Posting" referencedIdentifier="PostingVC" id="nkl-yl-wsn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xeW-fQ-aZE"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b45-b8-hM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2521" y="319"/>
+            <point key="canvasLocation" x="1573" y="222"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="A2h-7h-Imj">
@@ -55,21 +24,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lVx-hd-rdo"/>
-                        <segue destination="bsJ-jK-aKt" kind="relationship" relationship="viewControllers" id="0cN-xu-8si"/>
-                        <segue destination="nkl-yl-wsn" kind="relationship" relationship="viewControllers" id="8c2-Kp-hQT"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8as-04-whq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2014" y="-176"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

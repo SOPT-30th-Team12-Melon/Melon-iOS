@@ -325,7 +325,6 @@
 		6AE8B42228336D7800151DEC /* Posting */ = {
 			isa = PBXGroup;
 			children = (
-				6AE8B42C283370B400151DEC /* Posting.storyboard */,
 				6AE8B432283371EB00151DEC /* PostingVC.swift */,
 			);
 			path = Posting;
@@ -343,6 +342,7 @@
 		9B18305E2838DBB900E0C13B /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				6AE8B42C283370B400151DEC /* Posting.storyboard */,
 				6AE8B4092833665800151DEC /* tabBarController.storyboard */,
 				9B18305C2838DBA200E0C13B /* Album.storyboard */,
 				9B8E60F728407E250000A4DC /* Main.storyboard */,

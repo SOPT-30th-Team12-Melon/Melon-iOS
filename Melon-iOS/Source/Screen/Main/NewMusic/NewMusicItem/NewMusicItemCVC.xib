@@ -47,7 +47,6 @@
             <constraints>
                 <constraint firstItem="vpx-Q5-BcA" firstAttribute="top" secondItem="fxm-hF-ydO" secondAttribute="bottom" constant="10" id="Lvb-iA-Gke"/>
                 <constraint firstItem="cft-yy-CwQ" firstAttribute="top" secondItem="vpx-Q5-BcA" secondAttribute="bottom" id="MfI-JF-X5m"/>
-                <constraint firstAttribute="bottom" secondItem="cft-yy-CwQ" secondAttribute="bottom" constant="3" id="NM0-1Q-vkV"/>
                 <constraint firstItem="fxm-hF-ydO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PPr-TV-yrd"/>
                 <constraint firstItem="fxm-hF-ydO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W4B-Vi-nQM"/>
                 <constraint firstItem="vpx-Q5-BcA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YBv-mM-hto"/>
