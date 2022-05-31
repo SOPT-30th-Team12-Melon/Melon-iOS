@@ -31,6 +31,7 @@ class PostingVC: UIViewController {
         commentTextView.text = placeholder
         commentTextView.textColor = UIColor.gray
         commentTextView.textContainerInset = UIEdgeInsets(top: 16,left: 25,bottom: 16,right: 33)
+        commentTextView.tintColor = UIColor.green1
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
