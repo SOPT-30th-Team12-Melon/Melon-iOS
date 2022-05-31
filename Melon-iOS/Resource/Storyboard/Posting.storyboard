@@ -35,6 +35,9 @@
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="취소"/>
+                                        <connections>
+                                            <action selector="cancelButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4eB-Ts-wJA"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글쓰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6n-8w-jAg">
                                         <rect key="frame" x="178" y="13" width="52" height="24"/>
@@ -49,6 +52,9 @@
                                         <state key="normal" title="등록">
                                             <color key="titleColor" name="12MelonGray"/>
                                         </state>
+                                        <connections>
+                                            <action selector="applyButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AGA-vC-tAy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-yH-aOY">
                                         <rect key="frame" x="216" y="5" width="51" height="40"/>
@@ -187,6 +193,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="globe.europe.africa.fill" catalog="system" id="DE4-YK-cYp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="applyButton" destination="5LR-aZ-kn2" id="e0d-m4-Ac8"/>
+                        <outlet property="cancelButton" destination="mV1-gS-tgw" id="8Ls-YK-dR5"/>
+                        <outlet property="commentTextView" destination="pV3-Tr-cdf" id="Dyf-y8-hKH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
