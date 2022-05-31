@@ -9,6 +9,7 @@ import UIKit
 
 class PostingVC: UIViewController {
     
+    let placeholder = "24시간 이내 스트리밍 감상한 곡에 한하여 작성하신 댓글에 감상 여부가 표기 됩니다.\n감상 후 24시간이 지난 경우, 또는 내부 서비스 환경에 따라 감상 여부의 표기가 안될 수 있습니다."
     
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var applyButton: UIButton!
@@ -22,10 +23,40 @@ class PostingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setCommentTextView()
+        setDelegate()
     }
     
     func setCommentTextView() {
+        commentTextView.text = placeholder
+        commentTextView.textColor = UIColor.gray
         commentTextView.textContainerInset = UIEdgeInsets(top: 16,left: 25,bottom: 16,right: 33)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func setDelegate(){
+        commentTextView.delegate = self
+    }
 
+}
+
+extension PostingVC: UITextViewDelegate{
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            commentTextView.textColor = UIColor.gray
+        }else if textView.text == placeholder {
+            commentTextView.textColor = UIColor.white
+            commentTextView.text = nil
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            commentTextView.textColor = UIColor.gray
+            commentTextView.text = placeholder
+        }
+    }
+    
 }
