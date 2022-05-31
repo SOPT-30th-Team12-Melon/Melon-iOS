@@ -11,19 +11,18 @@ class MainTBC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configurationUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configurationUI(){
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.backgroundColor = .darkGray
+        tabBarAppearance.stackedLayoutAppearance.normal.iconColor = .gray
+        tabBarAppearance.stackedLayoutAppearance.selected.iconColor = .green1
+        tabBar.standardAppearance = tabBarAppearance
+        tabBar.scrollEdgeAppearance = tabBarAppearance
+        tabBar.isTranslucent = false
     }
-    */
-
 }
+
+
