@@ -196,6 +196,7 @@
                         <outlet property="applyButton" destination="5LR-aZ-kn2" id="e0d-m4-Ac8"/>
                         <outlet property="cancelButton" destination="mV1-gS-tgw" id="8Ls-YK-dR5"/>
                         <outlet property="commentTextView" destination="pV3-Tr-cdf" id="Dyf-y8-hKH"/>
+                        <outlet property="wordCountLabel" destination="Saq-YB-Yph" id="5EZ-jG-XZc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

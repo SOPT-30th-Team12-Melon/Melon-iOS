@@ -15,6 +15,7 @@ class PostingVC: UIViewController {
     @IBOutlet weak var applyButton: UIButton!
     @IBOutlet weak var commentTextView: UITextView!
     
+    @IBOutlet weak var wordCountLabel: UILabel!
     @IBAction func cancelButtonDidTap(_ sender: Any) {
     }
     
@@ -59,4 +60,12 @@ extension PostingVC: UITextViewDelegate{
         }
     }
     
+    func textViewDidChange(_ textView: UITextView) {
+        if commentTextView.text.count > 1000 {
+           commentTextView.deleteBackward()
+        }
+        
+        wordCountLabel.text = "\(commentTextView.text.count) / 1000"
+    }
+
 }
