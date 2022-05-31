@@ -9,7 +9,9 @@
         <!--Main-->
         <scene sceneID="30m-wr-08Z">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="HHf-Bm-NDG" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="HHf-Bm-NDG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="N8e-Mb-Lwc"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjv-wc-TAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1573" y="222"/>
@@ -24,6 +26,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="HHf-Bm-NDG" kind="relationship" relationship="viewControllers" id="wG2-bO-dq1"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8as-04-whq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
