@@ -1,13 +1,13 @@
 //
-//  tabBarController.swift
+//  MainTBC.swift
 //  Melon-iOS
 //
-//  Created by 이유진 on 2022/05/17.
+//  Created by 이의진 on 2022/06/01.
 //
 
 import UIKit
 
-class tabBarController: UITabBarController {
+class MainTBC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
