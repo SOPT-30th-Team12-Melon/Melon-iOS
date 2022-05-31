@@ -23,15 +23,18 @@ class PostingVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setCommentTextView()
+        setUI()
         setDelegate()
     }
     
-    func setCommentTextView() {
+    func setUI() {
         commentTextView.text = placeholder
         commentTextView.textColor = UIColor.gray
         commentTextView.textContainerInset = UIEdgeInsets(top: 16,left: 25,bottom: 16,right: 33)
         commentTextView.tintColor = UIColor.green1
+        
+        applyButton.titleLabel?.textColor = UIColor.gray
+        applyButton.isEnabled = false
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -52,7 +55,10 @@ extension PostingVC: UITextViewDelegate{
             commentTextView.textColor = UIColor.white
             commentTextView.text = nil
         }
+        
     }
+    
+    
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
@@ -67,6 +73,14 @@ extension PostingVC: UITextViewDelegate{
         }
         
         wordCountLabel.text = "\(commentTextView.text.count) / 1000"
+        
+        if commentTextView.text !=  ""{
+            applyButton.titleLabel?.textColor = UIColor.green1
+            applyButton.isUserInteractionEnabled = true
+        }else {
+            applyButton.titleLabel?.textColor = UIColor.gray
+            applyButton.isUserInteractionEnabled = false
+        }
     }
 
 }
