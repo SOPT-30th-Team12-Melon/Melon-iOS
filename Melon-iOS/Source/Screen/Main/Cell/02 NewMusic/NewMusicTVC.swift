@@ -7,9 +7,12 @@
 
 import UIKit
 
+
+
 class NewMusicTVC: UITableViewCell {
     @IBOutlet weak var newMusicCollectionView: UICollectionView!
     
+    var selectNewMusic: (() -> ())?
     static let identifier = "NewMusicTVC"
     var identifiers = [NewMusicItemCVC.identifier]
 
@@ -42,9 +45,6 @@ class NewMusicTVC: UITableViewCell {
         setDelegate()
         registerCell()
     }
-    
-    
-    
 }
     
 extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
@@ -73,7 +73,12 @@ extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top:0, left: 0, bottom: 0, right: 0)
     }
-    
+   
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            selectNewMusic?()
+        }
+    }
     
     
     

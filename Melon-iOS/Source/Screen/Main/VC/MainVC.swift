@@ -7,7 +7,10 @@
 
 import UIKit
 
+
+
 class MainVC: UIViewController {
+    
     @IBOutlet weak var mainTableView: UITableView!
     
     let identifiers = [FavoriteMusicTVC.identifier, MusicProjectTVC.identifier, NewMusicTVC.identifier, Top3TVC.identifier, CustomMusicTVC.identifier ]
@@ -23,6 +26,7 @@ class MainVC: UIViewController {
         mainTableView.dataSource = self
     }
     
+
     private func registerCell(){
         var nib : [UINib] = []
         identifiers.forEach{
@@ -70,6 +74,11 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
         case 2:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[2], for: indexPath) as? NewMusicTVC else {return UITableViewCell()}
             cell.collectionViewGetReady()
+            cell.selectNewMusic = {[unowned self] in
+                let storyboard = UIStoryboard(name: "Album", bundle: Bundle.main)
+                guard let albumVC = storyboard.instantiateViewController(withIdentifier: "AlbumVC") as? AlbumVC else {print("Transition Error!"); return}
+                navigationController?.pushViewController(albumVC, animated: true)
+            }
             return cell
         case 3:
             guard let cell = mainTableView.dequeueReusableCell(withIdentifier: identifiers[3], for: indexPath) as? Top3TVC else {return UITableViewCell()}
@@ -84,3 +93,5 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource{
         }
     }
 }
+
+

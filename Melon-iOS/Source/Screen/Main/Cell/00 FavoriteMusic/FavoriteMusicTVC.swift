@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
  
 class FavoriteMusicTVC: UITableViewCell {
     
@@ -64,7 +65,6 @@ extension FavoriteMusicTVC : UICollectionViewDelegateFlowLayout, UICollectionVie
         let width = UIScreen.main.bounds.width
         let cellWidth = width * (200/375)
         let cellHeight = cellWidth * (226/200)
-        print(cellHeight)
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
