@@ -23,6 +23,9 @@
                                         <rect key="frame" x="14" y="7" width="52" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ic_back"/>
+                                        <connections>
+                                            <action selector="tabBackBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2HA-gg-4LG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-CN-KPs">
                                         <rect key="frame" x="349" y="7" width="51" height="40"/>

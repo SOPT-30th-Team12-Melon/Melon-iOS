@@ -36,6 +36,10 @@ class AlbumVC: UIViewController {
         
     }
     
+    @IBAction func tabBackBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension AlbumVC : UITableViewDelegate, UITableViewDataSource{

@@ -36,6 +36,7 @@ class MainVC: UIViewController {
             mainTableView.register($1, forCellReuseIdentifier: identifiers[$0])
         }
     }
+    
 }
 
 extension MainVC : UITableViewDelegate, UITableViewDataSource{
