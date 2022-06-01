@@ -18,8 +18,8 @@ class NewMusicItemCVC: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func setData(newMusicItemData: NewMusicItemDataModel){
-        image.image = UIImage(named:newMusicItemData.imageName)
+    func setData(newMusicItemData: NewMusicData){
+        image.image = UIImage(named:newMusicItemData.image)
         title.text = newMusicItemData.title
         singer.text = newMusicItemData.singer
     }
