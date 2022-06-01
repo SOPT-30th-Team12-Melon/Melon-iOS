@@ -17,9 +17,11 @@ class PostingVC: UIViewController {
     
     @IBOutlet weak var wordCountLabel: UILabel!
     @IBAction func cancelButtonDidTap(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
     @IBAction func applyButtonDidTap(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,7 @@ class PostingVC: UIViewController {
         commentTextView.tintColor = UIColor.green1
         
         applyButton.titleLabel?.textColor = UIColor.gray
-        applyButton.isEnabled = false
+        applyButton.isUserInteractionEnabled = false
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

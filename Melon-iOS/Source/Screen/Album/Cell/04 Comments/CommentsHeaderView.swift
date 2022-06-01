@@ -7,14 +7,18 @@
 
 import UIKit
 
+protocol CommentHeaderViewDelegate{
+    func pushToPostView()
+}
+
 class CommentsHeaderView: UITableViewHeaderFooterView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    var delegate: CommentHeaderViewDelegate?
 
+    @IBAction func tabCommentBtn(_ sender: Any) {
+        if let delegate = delegate {
+            delegate.pushToPostView()
+        }
+    }
+    
 }

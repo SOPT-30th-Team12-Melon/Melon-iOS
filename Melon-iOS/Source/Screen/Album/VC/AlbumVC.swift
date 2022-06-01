@@ -89,6 +89,7 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         }
         else if section == 4{
             guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "CommentsHeaderView") as? CommentsHeaderView else {return UIView()}
+            headerView.delegate = self
             return headerView
         }
         else{
@@ -103,6 +104,15 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         else {
             return 0
         }
+    }
+}
+
+extension AlbumVC: CommentHeaderViewDelegate{
+    func pushToPostView() {
+        let storyboard = UIStoryboard(name: "Posting", bundle: Bundle.main)
+        guard let postingVC = storyboard.instantiateViewController(withIdentifier: "PostingVC") as? PostingVC else {return}
+        postingVC.modalPresentationStyle = .fullScreen
+        self.present(postingVC, animated: true)
     }
 }
 

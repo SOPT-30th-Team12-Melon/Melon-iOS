@@ -36,6 +36,10 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="album_btn_post" title=""/>
+                        <connections>
+                            <action selector="tabCommentBtn:" destination="-1" eventType="touchUpInside" id="Szy-FM-DMQ"/>
+                            <action selector="tabCommentWriteBrn:" destination="-1" eventType="touchUpInside" id="e5p-Y7-BPJ"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" name="12MelonDarkgray"/>
