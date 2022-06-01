@@ -17,42 +17,41 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lu-LA-IP6">
-                        <rect key="frame" x="20" y="10" width="164" height="42"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="42" id="u8D-Md-gXq"/>
-                        </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" image="ic_shuffle" title="  셔플재생">
-                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
-                            <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </buttonConfiguration>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xo-z0-7LY">
-                        <rect key="frame" x="191" y="10" width="164" height="42"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="42" id="GgX-6c-PUa"/>
-                        </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" image="ic_play_small" title="  전체재생">
-                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
-                            <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </buttonConfiguration>
-                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="AOe-I7-7oT">
+                        <rect key="frame" x="20" y="10" width="335" height="42"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lu-LA-IP6">
+                                <rect key="frame" x="0.0" y="0.0" width="164" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0lu-LA-IP6" secondAttribute="height" multiplier="82:21" id="QDF-20-AIR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="ic_shuffle" title="  셔플재생">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xo-z0-7LY">
+                                <rect key="frame" x="171" y="0.0" width="164" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="ic_play_small" title="  전체재생">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <color key="backgroundColor" name="12MelonDarkgray"/>
                 <constraints>
-                    <constraint firstItem="1xo-z0-7LY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2g0-2T-vxM"/>
-                    <constraint firstAttribute="trailing" secondItem="1xo-z0-7LY" secondAttribute="trailing" constant="20" id="UHC-PR-Kdm"/>
-                    <constraint firstItem="0lu-LA-IP6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fIo-2e-Xhm"/>
-                    <constraint firstItem="0lu-LA-IP6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kiB-Qf-RL5"/>
-                    <constraint firstItem="1xo-z0-7LY" firstAttribute="width" secondItem="0lu-LA-IP6" secondAttribute="width" id="v4S-wB-zXd"/>
-                    <constraint firstAttribute="bottom" secondItem="0lu-LA-IP6" secondAttribute="bottom" constant="10" id="w0K-QG-WHW"/>
-                    <constraint firstItem="1xo-z0-7LY" firstAttribute="leading" secondItem="0lu-LA-IP6" secondAttribute="trailing" constant="7" id="xpo-gH-Qm7"/>
+                    <constraint firstAttribute="trailing" secondItem="AOe-I7-7oT" secondAttribute="trailing" constant="20" id="VVc-hz-EfO"/>
+                    <constraint firstItem="AOe-I7-7oT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aqf-xD-Je5"/>
+                    <constraint firstItem="AOe-I7-7oT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="x9E-rh-B15"/>
+                    <constraint firstAttribute="bottom" secondItem="AOe-I7-7oT" secondAttribute="bottom" constant="10" id="zeN-I1-SPK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="193.47826086956522" y="127.90178571428571"/>
+            <point key="canvasLocation" x="190.57971014492756" y="119.86607142857142"/>
         </tableViewCell>
     </objects>
     <resources>
