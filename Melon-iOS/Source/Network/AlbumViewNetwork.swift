@@ -36,9 +36,8 @@ class AlbumViewNetwork{
     func getComments(albumId:String, completion : @escaping (NetworkResult<Any>) -> Void){
         let url = APIConstants.commentGetURL + albumId
         let header: HTTPHeaders = ["Content-Type": "application/json"]
-        let body : Parameters = [:]
         
-        let dataRequest = AF.request(url, method: .get, parameters: body, encoding: JSONEncoding.default, headers: header)
+        let dataRequest = AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
         
         dataRequest.responseData {response in
             switch response.result{

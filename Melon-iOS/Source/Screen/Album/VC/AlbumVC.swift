@@ -100,6 +100,20 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
             return cell
         case 4:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[4], for: indexPath) as? CommentsTVC else {return UITableViewCell()}
+            AlbumViewNetwork.shared.getComments(albumId: "6290145b6af16276098d04d9"){response in
+                switch response{
+                case .success(let commentResponse):
+                    guard let commentResponse = commentResponse as? CommentResponse else {return}
+                    if let data = commentResponse.data{
+                        cell.setData(data: data[indexPath.row])
+                    } else {
+                        return
+                    }
+                default:
+                    return
+                }
+            }
+
             return cell
         default:
             let cell = UITableViewCell()
@@ -116,6 +130,7 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         else if section == 4{
             guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "CommentsHeaderView") as? CommentsHeaderView else {return UIView()}
             headerView.delegate = self
+            
             return headerView
         }
         else{

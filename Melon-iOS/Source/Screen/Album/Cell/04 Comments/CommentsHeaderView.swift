@@ -14,6 +14,7 @@ protocol CommentHeaderViewDelegate{
 class CommentsHeaderView: UITableViewHeaderFooterView {
 
     var delegate: CommentHeaderViewDelegate?
+    
 
     @IBAction func tabCommentBtn(_ sender: Any) {
         if let delegate = delegate {
