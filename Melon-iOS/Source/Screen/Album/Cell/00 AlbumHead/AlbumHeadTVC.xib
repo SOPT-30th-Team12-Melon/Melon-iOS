@@ -42,7 +42,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마음을 담아줘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CR-Ye-FlU">
-                        <rect key="frame" x="19.999999999999993" y="193" width="108.33333333333331" height="23"/>
+                        <rect key="frame" x="20.000000000000007" y="193" width="109.66666666666669" height="23"/>
                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -53,61 +53,61 @@
                         <color key="textColor" name="12MelonLightgray"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-9G-vic">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FLAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-9G-vic">
                         <rect key="frame" x="88.666666666666671" y="223" width="30" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonLightgray"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star0" translatesAutoresizingMaskIntoConstraints="NO" id="xAM-Zz-VRL">
-                        <rect key="frame" x="145.33333333333334" y="221" width="14" height="14"/>
+                        <rect key="frame" x="146.66666666666666" y="221" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="Ff0-1q-e2X"/>
                             <constraint firstAttribute="width" constant="14" id="tQl-UP-Dyc"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star50" translatesAutoresizingMaskIntoConstraints="NO" id="9t9-1N-iXO">
-                        <rect key="frame" x="159.33333333333334" y="221" width="14" height="14"/>
+                        <rect key="frame" x="160.66666666666666" y="221" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="0yF-MP-9ww"/>
                             <constraint firstAttribute="width" constant="14" id="bM5-ej-U7O"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star100-1" translatesAutoresizingMaskIntoConstraints="NO" id="c4B-E1-uQN">
-                        <rect key="frame" x="173.33333333333334" y="221" width="14" height="14"/>
+                        <rect key="frame" x="174.66666666666666" y="221" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="naL-QQ-VVa"/>
                             <constraint firstAttribute="height" constant="14" id="uas-sd-cHe"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star100-1" translatesAutoresizingMaskIntoConstraints="NO" id="EAb-1L-VZu">
-                        <rect key="frame" x="187.33333333333334" y="221" width="14" height="14"/>
+                        <rect key="frame" x="188.66666666666666" y="221" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="Wqq-Mg-8nO"/>
                             <constraint firstAttribute="height" constant="14" id="e1v-pa-yEN"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star100-1" translatesAutoresizingMaskIntoConstraints="NO" id="6fb-EN-8Jr">
-                        <rect key="frame" x="201.33333333333334" y="221" width="14" height="14"/>
+                        <rect key="frame" x="202.66666666666666" y="221" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="1QF-jl-O1B"/>
                             <constraint firstAttribute="width" constant="14" id="Qqo-gr-HZ0"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX5-Ib-WVC">
-                        <rect key="frame" x="219.33333333333334" y="221" width="17" height="14"/>
+                        <rect key="frame" x="220.66666666666666" y="221" width="17" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                         <color key="textColor" systemColor="systemGreenColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· 2명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhs-ap-4Nr">
-                        <rect key="frame" x="240.33333333333334" y="221" width="24.000000000000028" height="14"/>
+                        <rect key="frame" x="241.66666666666666" y="221" width="23.999999999999972" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonGray"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldM-TR-6LH">
-                        <rect key="frame" x="266.33333333333331" y="221" width="20" height="15"/>
+                        <rect key="frame" x="267.66666666666669" y="221" width="20" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="MPk-HG-wLe"/>
                             <constraint firstAttribute="height" constant="15" id="Mdn-xR-dWj"/>
@@ -150,7 +150,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32x-jh-eNt">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="타코앤제이형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32x-jh-eNt">
                         <rect key="frame" x="49" y="252" width="62.333333333333343" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
