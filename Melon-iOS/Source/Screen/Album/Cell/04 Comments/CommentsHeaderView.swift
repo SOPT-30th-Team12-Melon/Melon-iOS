@@ -13,7 +13,13 @@ protocol CommentHeaderViewDelegate{
 
 class CommentsHeaderView: UITableViewHeaderFooterView {
 
+    @IBOutlet weak var commentsNum: UILabel!
+
+    func setCommentNum(num: Int){
+        commentsNum.text = "댓글 " + String(num)
+    }
     var delegate: CommentHeaderViewDelegate?
+    
 
     @IBAction func tabCommentBtn(_ sender: Any) {
         if let delegate = delegate {

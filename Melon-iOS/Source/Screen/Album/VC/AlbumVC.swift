@@ -12,6 +12,7 @@ class AlbumVC: UIViewController {
     @IBOutlet weak var albumTableView: UITableView!
     var sections = [("AlbumHead", 1), ("PlayBtn", 1), ("AlbumInfo", 1), ("AlbumList", 1), ("Comment", 3)]
     let identifiers = [AlbumHeadTVC.identifier, PlayBtnCellTVC.identifier, AlbumListTitleTVC.identifier, AlbumInfoTVC.identifier, CommentsTVC.identifier]
+    var commentsList: [CommentsData] = []
 
     
     
@@ -20,6 +21,30 @@ class AlbumVC: UIViewController {
         albumTableView.delegate = self
         albumTableView.dataSource = self
         registerCell()
+        fetchData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let queue = DispatchQueue.global()
+        queue.sync{fetchData()}
+    }
+    
+    private func fetchData(){
+        AlbumViewNetwork.shared.getComments(albumId: "6290145b6af16276098d04d9"){response in
+            switch response{
+            case .success(let commentsResponse):
+                guard let commentsResponse = commentsResponse as? CommentsResponse else {return}
+                if let data = commentsResponse.data{
+                    self.commentsList = data
+                } else {
+                    return
+                }
+                self.albumTableView.reloadData()
+            default:
+                return
+            }
+        }
+        print(commentsList)
     }
     
     private func registerCell(){
@@ -55,6 +80,9 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 4{
+            return commentsList.count
+        }
         return sections[section].1
     }
 
@@ -62,6 +90,20 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section{
         case 0:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? AlbumHeadTVC else {return UITableViewCell()}
+            AlbumViewNetwork.shared.getAlbumInfo(albumId: "6290145b6af16276098d04d9"){response in
+                switch response{
+                case .success(let albumInfoResponse):
+                    guard let albumInfoResponse = albumInfoResponse as? AlbumInfoResponse else {return}
+                    if let data = albumInfoResponse.data{
+                        cell.setData(data: data)
+                    } else {
+                        return
+                    }
+                default:
+                    return
+                }
+            }
+            cell.setCommentsNum(num: commentsList.count)
             return cell
         case 1:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? PlayBtnCellTVC else {return UITableViewCell()}
@@ -71,9 +113,24 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
             return cell
         case 3:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[3], for: indexPath) as? AlbumInfoTVC else {return UITableViewCell()}
+            AlbumViewNetwork.shared.getAlbumInfo(albumId: "6290145b6af16276098d04d9"){response in
+                switch response{
+                case .success(let albumInfoResponse):
+                    guard let albumInfoResponse = albumInfoResponse as? AlbumInfoResponse else {return}
+                    if let data = albumInfoResponse.data{
+                        cell.setData(data: data)
+                    } else {
+                        return
+                    }
+                default:
+                    return
+                }
+            }
             return cell
         case 4:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[4], for: indexPath) as? CommentsTVC else {return UITableViewCell()}
+            cell.setData(data: commentsList[indexPath.row])
+
             return cell
         default:
             let cell = UITableViewCell()
@@ -90,6 +147,7 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         else if section == 4{
             guard let headerView = albumTableView.dequeueReusableHeaderFooterView(withIdentifier: "CommentsHeaderView") as? CommentsHeaderView else {return UIView()}
             headerView.delegate = self
+            headerView.setCommentNum(num: commentsList.count)
             return headerView
         }
         else{

@@ -30,19 +30,19 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쌩이..!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-yr-F7i">
-                        <rect key="frame" x="51" y="6" width="33" height="14.5"/>
+                        <rect key="frame" x="51" y="6" width="34" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonLightgray"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="노래가 맘 터집니다" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9o-yG-vk9">
-                        <rect key="frame" x="20" y="33" width="89" height="15"/>
+                        <rect key="frame" x="20" y="33" width="90" height="14"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonLightgray"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nus-73-hRP">
-                        <rect key="frame" x="20" y="67" width="31" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="답글 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nus-73-hRP">
+                        <rect key="frame" x="20" y="66" width="31" height="16"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                         <color key="textColor" name="12MelonGray"/>
                         <nil key="highlightedColor"/>
@@ -62,6 +62,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="12MelonDarkgray"/>
+            <connections>
+                <outlet property="commentBody" destination="q9o-yG-vk9" id="oWH-S6-BS4"/>
+                <outlet property="nickName" destination="6pL-yr-F7i" id="JhH-es-RKE"/>
+                <outlet property="userImage" destination="LBl-zy-KpG" id="jfd-cZ-rDH"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="122.54464285714285"/>
         </tableViewCell>
     </objects>

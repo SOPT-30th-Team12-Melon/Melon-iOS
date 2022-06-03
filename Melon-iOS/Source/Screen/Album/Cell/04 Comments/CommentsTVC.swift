@@ -8,8 +8,17 @@
 import UIKit
 
 class CommentsTVC: UITableViewCell {
+    @IBOutlet weak var nickName: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var commentBody: UILabel!
     
     static let identifier = "CommentsTVC"
+    
+    func setData(data:CommentsData){
+        nickName.text = data.userID.nickName
+        commentBody.text = data.commentBody
+        userImage.loadImage(url: URL(string: data.userID.image)!)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
