@@ -330,7 +330,6 @@
 		6AE8B42028336D4400151DEC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9BAADA212846783200C78E28 /* Component */,
 				9BAADA202846783000C78E28 /* Cell */,
 				9BAADA1F2846782B00C78E28 /* VC */,
 			);
@@ -340,7 +339,6 @@
 		6AE8B42128336D7100151DEC /* Album */ = {
 			isa = PBXGroup;
 			children = (
-				9BAADA182846769800C78E28 /* Component */,
 				9BAADA172846769300C78E28 /* Cell */,
 				9BAADA162846769100C78E28 /* VC */,
 			);
@@ -470,13 +468,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		9BAADA182846769800C78E28 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
 		9BAADA19284676B200C78E28 /* 02 AlbumList */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,13 +537,6 @@
 				9B8E60F9284080130000A4DC /* 00 FavoriteMusic */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		9BAADA212846783200C78E28 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
