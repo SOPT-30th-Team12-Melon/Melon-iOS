@@ -13,7 +13,7 @@ class AlbumViewNetwork{
     private init() {}
    
     //MARK: - Request Methods
-    private func getAlbumInfo(albumId:String, completion : @escaping (NetworkResult<Any>) -> Void){
+    func getAlbumInfo(albumId:String, completion : @escaping (NetworkResult<Any>) -> Void){
         let url = APIConstants.albumGetURL + albumId
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         
