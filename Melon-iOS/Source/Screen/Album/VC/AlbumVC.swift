@@ -62,6 +62,19 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section{
         case 0:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as? AlbumHeadTVC else {return UITableViewCell()}
+            AlbumViewNetwork.shared.getAlbumInfo(albumId: "6290145b6af16276098d04d9"){response in
+                switch response{
+                case .success(let albumInfoResponse):
+                    guard let albumInfoResponse = albumInfoResponse as? AlbumInfoResponse else {return}
+                    if let data = albumInfoResponse.data{
+                        cell.setData(data: data)
+                    } else {
+                        return
+                    }
+                default:
+                    return
+                }
+            }
             return cell
         case 1:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? PlayBtnCellTVC else {return UITableViewCell()}
@@ -71,6 +84,19 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
             return cell
         case 3:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[3], for: indexPath) as? AlbumInfoTVC else {return UITableViewCell()}
+            AlbumViewNetwork.shared.getAlbumInfo(albumId: "6290145b6af16276098d04d9"){response in
+                switch response{
+                case .success(let albumInfoResponse):
+                    guard let albumInfoResponse = albumInfoResponse as? AlbumInfoResponse else {return}
+                    if let data = albumInfoResponse.data{
+                        cell.setData(data: data)
+                    } else {
+                        return
+                    }
+                default:
+                    return
+                }
+            }
             return cell
         case 4:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[4], for: indexPath) as? CommentsTVC else {return UITableViewCell()}

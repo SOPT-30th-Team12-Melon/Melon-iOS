@@ -82,8 +82,8 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.05.12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kP-CB-ChQ">
-                        <rect key="frame" x="67" y="117" width="64.5" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.05.14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kP-CB-ChQ">
+                        <rect key="frame" x="67" y="117" width="65" height="16"/>
                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -144,6 +144,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumCompany" destination="rEm-OJ-knj" id="bDU-7x-n9Z"/>
+                <outlet property="albumContent" destination="SHB-YS-t6Q" id="ntW-XX-OWK"/>
+                <outlet property="albumDate" destination="5kP-CB-ChQ" id="3OO-7I-hci"/>
+                <outlet property="albumGenre" destination="MUe-eb-hFv" id="4hO-E2-fE6"/>
+                <outlet property="albumType" destination="MUe-eb-hFv" id="fZg-ZO-7Dt"/>
+                <outlet property="company" destination="dsq-OQ-3zV" id="yii-EW-MbG"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="222.65625"/>
         </tableViewCell>
     </objects>
