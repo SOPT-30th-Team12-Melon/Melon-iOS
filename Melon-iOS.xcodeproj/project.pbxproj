@@ -330,7 +330,6 @@
 		6AE8B42028336D4400151DEC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9BAADA212846783200C78E28 /* Component */,
 				9BAADA202846783000C78E28 /* Cell */,
 				9BAADA1F2846782B00C78E28 /* VC */,
 			);
@@ -538,13 +537,6 @@
 				9B8E60F9284080130000A4DC /* 00 FavoriteMusic */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		9BAADA212846783200C78E28 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
