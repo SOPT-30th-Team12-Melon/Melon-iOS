@@ -10,6 +10,8 @@ import UIKit
 class PostingVC: UIViewController {
     
     let placeholder = "24시간 이내 스트리밍 감상한 곡에 한하여 작성하신 댓글에 감상 여부가 표기 됩니다.\n감상 후 24시간이 지난 경우, 또는 내부 서비스 환경에 따라 감상 여부의 표기가 안될 수 있습니다."
+    var albumId = "6290145b6af16276098d04d9"
+    var userID = "62962d709c483dc149a29a86"
     
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var applyButton: UIButton!
@@ -22,6 +24,24 @@ class PostingVC: UIViewController {
     
     @IBAction func applyButtonDidTap(_ sender: Any) {
         self.dismiss(animated: true)
+        
+        
+        CommentPostingService.shared.postComment(albumID: albumId, userID: userID, comment: commentTextView.text){ response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? CommentResponse else { return }
+                print(data)
+               
+            case .requestErr(let err):
+                print(err)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
