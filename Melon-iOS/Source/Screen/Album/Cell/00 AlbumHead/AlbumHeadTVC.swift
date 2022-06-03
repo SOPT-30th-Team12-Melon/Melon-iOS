@@ -25,6 +25,10 @@ class AlbumHeadTVC: UITableViewCell {
     @IBOutlet weak var star4: UIImageView!
     @IBOutlet weak var star5: UIImageView!
     
+    func setCommentsNum(num: Int){
+        commentNumber.text = String(num)
+    }
+    
     private func dateToString(_ date: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'"

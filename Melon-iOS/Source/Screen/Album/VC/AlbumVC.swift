@@ -103,6 +103,7 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
                     return
                 }
             }
+            cell.setCommentsNum(num: commentsList.count)
             return cell
         case 1:
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[1], for: indexPath) as? PlayBtnCellTVC else {return UITableViewCell()}
