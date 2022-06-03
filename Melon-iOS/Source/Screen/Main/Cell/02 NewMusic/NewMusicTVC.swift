@@ -63,8 +63,8 @@ class NewMusicTVC: UITableViewCell {
                 self.newMusicCollectionView.reloadData()
             case .requestErr(let msg):
                 print("requestErr \(msg)")
-            case .pathErr(let msg):
-                print("pathErr \(msg)")
+            case .pathErr:
+                print("pathErr")
             case .serverErr:
                 print("serverErr")
             case .networkFail:
@@ -85,7 +85,7 @@ extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = newMusicCollectionView.dequeueReusableCell(withReuseIdentifier: NewMusicItemCVC.identifier, for: indexPath) as? NewMusicItemCVC else {return UICollectionViewCell()}
         print(newMusicModelList.count)
-        cell.setData(newMusicItemData: newMusicModelList[indexPath.row])
+//        cell.setData(newMusicItemData: newMusicModelList[indexPath.row])
         return cell
     }
     

@@ -54,7 +54,7 @@ class NewMusicService {
         switch statusCode {
         // 성공 시 데이터를 decode(해독) 함수 호출
         case 200: return isVaildData(data: data)
-        case 400: return .pathErr(data)
+        case 400: return .pathErr
         case 500: return .serverErr
         default: return .networkFail
         }
@@ -65,7 +65,7 @@ class NewMusicService {
     private func isVaildData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(NewMusicResponse.self, from: data)
-        else { return .pathErr(data) }
+        else { return .pathErr }
         
         return .success(decodedData as Any)
     }
