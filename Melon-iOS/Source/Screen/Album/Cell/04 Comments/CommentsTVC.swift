@@ -14,7 +14,7 @@ class CommentsTVC: UITableViewCell {
     
     static let identifier = "CommentsTVC"
     
-    func setData(data:CommentData){
+    func setData(data:CommentsData){
         nickName.text = data.userID.nickName
         commentBody.text = data.commentBody
         userImage.loadImage(url: URL(string: data.userID.image)!)

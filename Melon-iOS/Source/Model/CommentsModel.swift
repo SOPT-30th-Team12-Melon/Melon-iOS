@@ -6,15 +6,15 @@
 import Foundation
 
 // MARK: - Response
-struct CommentResponse: Codable {
+struct CommentsResponse: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [CommentData]?
+    let data: [CommentsData]?
 }
 
 // MARK: - CommentData
-struct CommentData: Codable {
+struct CommentsData: Codable {
     let albumID: String
     let userID: UserID
     let commentBody: String

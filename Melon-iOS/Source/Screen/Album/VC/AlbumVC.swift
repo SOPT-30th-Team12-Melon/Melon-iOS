@@ -102,9 +102,9 @@ extension AlbumVC : UITableViewDelegate, UITableViewDataSource{
             guard let cell = albumTableView.dequeueReusableCell(withIdentifier: identifiers[4], for: indexPath) as? CommentsTVC else {return UITableViewCell()}
             AlbumViewNetwork.shared.getComments(albumId: "6290145b6af16276098d04d9"){response in
                 switch response{
-                case .success(let commentResponse):
-                    guard let commentResponse = commentResponse as? CommentResponse else {return}
-                    if let data = commentResponse.data{
+                case .success(let commentsResponse):
+                    guard let commentsResponse = commentsResponse as? CommentsResponse else {return}
+                    if let data = commentsResponse.data{
                         cell.setData(data: data[indexPath.row])
                     } else {
                         return

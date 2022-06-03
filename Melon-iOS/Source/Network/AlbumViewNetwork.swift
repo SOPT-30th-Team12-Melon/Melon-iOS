@@ -13,7 +13,7 @@ class AlbumViewNetwork{
     private init() {}
    
     //MARK: - Request Methods
-    func getAlbumInfo(albumId:String, completion : @escaping (NetworkResult<Any>) -> Void){
+    private func getAlbumInfo(albumId:String, completion : @escaping (NetworkResult<Any>) -> Void){
         let url = APIConstants.albumGetURL + albumId
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         
@@ -53,7 +53,7 @@ class AlbumViewNetwork{
         }
     }
     // MARK: - judgeStatus Method
-    private func judgeStatus(what request : String, by statusCode : Int, _ data : Data) -> NetworkResult<Any>{
+    func judgeStatus(what request : String, by statusCode : Int, _ data : Data) -> NetworkResult<Any>{
         let decoder = JSONDecoder()
         
         if request == "getAlbumInfo" {
@@ -68,7 +68,7 @@ class AlbumViewNetwork{
             }
         }
         else if request == "getComments"{
-                guard let decodedData = try? decoder.decode(CommentResponse.self, from: data)
+                guard let decodedData = try? decoder.decode(CommentsResponse.self, from: data)
                 else {return .pathErr}
                 
                 switch statusCode{
