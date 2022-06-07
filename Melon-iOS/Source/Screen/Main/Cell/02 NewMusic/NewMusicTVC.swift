@@ -15,9 +15,12 @@ class NewMusicTVC: UITableViewCell {
     var selectNewMusic: (() -> ())?
     static let identifier = "NewMusicTVC"
     var identifiers = [NewMusicItemCVC.identifier]
+    
+    var newMusicModelList: [NewMusicData] = []
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        fetchMusicList()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -45,16 +48,44 @@ class NewMusicTVC: UITableViewCell {
         setDelegate()
         registerCell()
     }
+    
+    func fetchMusicList() {
+        print("하냐?")
+        NewMusicService.shared.requestMusic() { responseData in
+            switch responseData {
+            case .success(let getResponse):
+                guard let response = getResponse as? NewMusicResponse else { return }
+                print("하냐양아ㅏ?")
+                if let musicList = response.data {
+                self.newMusicModelList = musicList
+                   
+                }
+                self.newMusicCollectionView.reloadData()
+            case .requestErr(let msg):
+                print("requestErr \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
 }
+
+
+
     
 extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return NewMusicItemDataModel.sampleData.count
+        return newMusicModelList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = newMusicCollectionView.dequeueReusableCell(withReuseIdentifier: NewMusicItemCVC.identifier, for: indexPath) as? NewMusicItemCVC else {return UICollectionViewCell()}
-        cell.setData(newMusicItemData: NewMusicItemDataModel.sampleData[indexPath.row])
+        print("dh\(newMusicModelList)")
+       cell.setData(newMusicItemData: newMusicModelList[indexPath.row])
         return cell
     }
     

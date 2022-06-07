@@ -79,6 +79,8 @@
 		E59B66B12847347A004FE77E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B66B02847347A004FE77E /* NetworkResult.swift */; };
 		E59B66B3284737B0004FE77E /* FavoriteMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B66B2284737B0004FE77E /* FavoriteMusicModel.swift */; };
 		E59B66B5284737C3004FE77E /* NewMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B66B4284737C3004FE77E /* NewMusicModel.swift */; };
+		E59B66B828474220004FE77E /* NewMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B66B728474220004FE77E /* NewMusicService.swift */; };
+		E59B66BA28474234004FE77E /* FavoriteMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B66B928474234004FE77E /* FavoriteMusicService.swift */; };
 		EEC2703D363F815D4CCF1BFB /* Pods_Melon_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E13D7DF98DACC1A6D5A8213 /* Pods_Melon_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +162,8 @@
 		E59B66B02847347A004FE77E /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		E59B66B2284737B0004FE77E /* FavoriteMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMusicModel.swift; sourceTree = "<group>"; };
 		E59B66B4284737C3004FE77E /* NewMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMusicModel.swift; sourceTree = "<group>"; };
+		E59B66B728474220004FE77E /* NewMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMusicService.swift; sourceTree = "<group>"; };
+		E59B66B928474234004FE77E /* FavoriteMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMusicService.swift; sourceTree = "<group>"; };
 		F2E65E367348C1170BA799CD /* Pods-Melon-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Melon-iOS/Pods-Melon-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,6 +249,7 @@
 			children = (
 				6AE8B41F28336D3C00151DEC /* Screen */,
 				6AE8B41E28336D3300151DEC /* Network */,
+				E59B66B6284741E0004FE77E /* Service */,
 				6AE8B41D28336D2700151DEC /* Model */,
 			);
 			path = Source;
@@ -539,6 +544,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E59B66B6284741E0004FE77E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E59B66B728474220004FE77E /* NewMusicService.swift */,
+				E59B66B928474234004FE77E /* FavoriteMusicService.swift */,
+			);
+			name = Service;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -697,6 +712,7 @@
 				9B0B3F442838FEE30012A279 /* CommentsTVC.swift in Sources */,
 				6A220D7C284A098300B51E31 /* CommentPostingModel.swift in Sources */,
 				9B0B3F402838FECF0012A279 /* AlbumHeadTVC.swift in Sources */,
+				E59B66B828474220004FE77E /* NewMusicService.swift in Sources */,
 				9BC6A7A3284A1BD7004B0D7F /* loadImagebyURL.swift in Sources */,
 				9B5CE3AA28497EE1002B6C26 /* CommentsModel.swift in Sources */,
 				9B8A3BE8283D99DA00A4FDB4 /* AlbumListTitleTVC.swift in Sources */,
@@ -714,6 +730,7 @@
 				E59B66AF2847329E004FE77E /* APIConstants.swift in Sources */,
 				9B8E60FC284080420000A4DC /* FavoriteMusicTVC.swift in Sources */,
 				6AE8B4042833665800151DEC /* AppDelegate.swift in Sources */,
+				E59B66BA28474234004FE77E /* FavoriteMusicService.swift in Sources */,
 				6A90B57F2833D02B00E273E5 /* UIViewController+.swift in Sources */,
 				9B3EF1112840DB2F00AA42AC /* MusicProjectTVC.swift in Sources */,
 				E59B66B5284737C3004FE77E /* NewMusicModel.swift in Sources */,
@@ -862,7 +879,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H7X76GFF7D;
+				DEVELOPMENT_TEAM = 3H85AXMVD3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -891,7 +908,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H7X76GFF7D;
+				DEVELOPMENT_TEAM = 3H85AXMVD3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

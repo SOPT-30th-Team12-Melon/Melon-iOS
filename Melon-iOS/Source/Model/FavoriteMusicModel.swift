@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct FavoriteResponse: Codable {
+struct FavoriteMusicResponse: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [FavoriteData]
+    let data: [FavoriteMusicData]
     let total: Int
 }
 
-struct FavoriteData: Codable {
+struct FavoriteMusicData: Codable {
     let title: String
     let image: String
     let body: String
