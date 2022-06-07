@@ -23,6 +23,7 @@ class NewMusicService {
         // Request 생성
         let dataRequest = AF.request(url,
                                     method: .get,
+                                     parameters: nil,
                                     encoding: JSONEncoding.default,
                                     headers: header)
         
@@ -40,7 +41,8 @@ class NewMusicService {
                 // case 분기처리
                 let networkResult = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
-            
+            print("성공")
+                print(networkResult)
             // 실패 시 networkFail(통신 실패)
             case .failure:
                 
@@ -64,6 +66,7 @@ class NewMusicService {
     // codable 채택해서 만든 데이터 모델(구조체 형식) 사용
     private func isVaildData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
+        print(data)
         guard let decodedData = try? decoder.decode(NewMusicResponse.self, from: data)
         else { return .pathErr }
         

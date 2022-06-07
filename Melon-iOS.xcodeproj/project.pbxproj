@@ -544,13 +544,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		9BAADA212846783200C78E28 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
 		E59B66B6284741E0004FE77E /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -886,7 +879,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H7X76GFF7D;
+				DEVELOPMENT_TEAM = 3H85AXMVD3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -915,7 +908,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H7X76GFF7D;
+				DEVELOPMENT_TEAM = 3H85AXMVD3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Melon-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

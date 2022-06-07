@@ -19,7 +19,7 @@ class NewMusicItemCVC: UICollectionViewCell {
     }
     
     func setData(newMusicItemData: NewMusicData){
-        image.image = UIImage(named:newMusicItemData.image)
+        image.loadImage(url: URL(string: newMusicItemData.image)!)
         title.text = newMusicItemData.title
         singer.text = newMusicItemData.singer
     }

@@ -79,13 +79,13 @@ class NewMusicTVC: UITableViewCell {
     
 extension NewMusicTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return NewMusicItemDataModel.sampleData.count
+        return newMusicModelList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = newMusicCollectionView.dequeueReusableCell(withReuseIdentifier: NewMusicItemCVC.identifier, for: indexPath) as? NewMusicItemCVC else {return UICollectionViewCell()}
-        print(newMusicModelList.count)
-//        cell.setData(newMusicItemData: newMusicModelList[indexPath.row])
+        print("dh\(newMusicModelList)")
+       cell.setData(newMusicItemData: newMusicModelList[indexPath.row])
         return cell
     }
     

@@ -12,7 +12,7 @@ struct NewMusicResponse: Codable {
     let success: Bool
     let message: String
     let data: [NewMusicData]?
-    let total: Int
+    let total: Int?
 }
 
 struct NewMusicData: Codable {
